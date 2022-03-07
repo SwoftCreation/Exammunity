@@ -1,33 +1,21 @@
 import React, { useState } from "react";
+import "../App.css";
 
 function EventPractice() {
-  const [state, setState] = useState({
-    username: "",
-    message: "",
-  });
+  const input2 = React.createRef();
+  const handleFocus = () => {
+    input2.current.Focus();
+  };
+
   return (
     <div>
-      <h1>이벤트 연습</h1>
-      <input
-        type="text"
-        name="message"
-        placeholder="아무거나 입력하세요"
-        value={state.username}
-        onChange={(e) => {
-          setState({ username: e.target.value });
-          console.log(state.username);
-        }}
-      />
-      <br />
+      <input type="text" name="textInput" ref={input2} className="textArea" />
       <input
         type="button"
-        value="clear"
-        onClick={() => {
-          setState({ ...state.message, username: "" });
-        }}
+        name="buttonFocus"
+        value="button"
+        onClick={handleFocus}
       />
-
-      <h1>{state.username}</h1>
     </div>
   );
 }
