@@ -3,7 +3,7 @@ import EventComponent from "./component/EventComponent";
 function App() {
   return (
     <div>
-      <EventComponent />
+     
     </div>
   );
 }
