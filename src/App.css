@@ -1,11 +1,10 @@
-.success {
-  background-color: green;
+.CarouselContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.failure {
-  background-color: red;
-}
-
-.textArea:hover {
-  background-color: aqua;
+.carousel {
+  flex-basis: 100%;
+  height: 100px;
 }

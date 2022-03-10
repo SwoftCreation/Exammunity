@@ -1,9 +1,12 @@
-import React, { useState } from "react";
-import EventComponent from "./component/EventComponent";
+import React from "react";
+import CarouselComponent from "./component/CarouselComponent";
+import NavbarComponent from "./component/NavbarComponent";
+
 function App() {
   return (
     <div>
-      <EventComponent />
+      <NavbarComponent />
+      <CarouselComponent />
     </div>
   );
 }
