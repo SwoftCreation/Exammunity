@@ -13,3 +13,6 @@ axios.api
 디자인 프레임워크
 reactstrap
 sweetAlert2
+
+세부레이아웃조정
+flexbox 
