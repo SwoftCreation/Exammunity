@@ -14,6 +14,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   align-content: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #navHover:hover {
@@ -23,4 +24,9 @@
   color: white;
   text-decoration: underline;
   transform: rotateY(360deg);
+}
+
+#FrontArticleButtons {
+  background-color: rgb(215, 250, 255);
+  color: black;
 }

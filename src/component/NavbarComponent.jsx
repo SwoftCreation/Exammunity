@@ -20,7 +20,9 @@ export default function NavbarComponent() {
   return (
     <div>
       <Navbar expand="md" light="true" style={{ backgroundColor: "#E6FAFF" }}>
-        <NavbarBrand href="/">Exammunity</NavbarBrand>
+        <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
+          Exammunity
+        </NavbarBrand>
         <NavbarToggler className="me-2" onClick={function noRefCheck() {}} />
         <Collapse navbar>
           <Nav className="me-auto" navbar>

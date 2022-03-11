@@ -28,7 +28,7 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button color="primary">시험지열람</Button>
+            <Button id="FrontArticleButtons">시험지열람</Button>
           </CardBody>
         </Card>
         <Card>
@@ -44,7 +44,7 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button color="primary">시험지열람</Button>
+            <Button id="FrontArticleButtons">시험지열람</Button>
           </CardBody>
         </Card>
         <Card>
@@ -60,7 +60,7 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button color="primary">시험지열람</Button>
+            <Button id="FrontArticleButtons">시험지열람</Button>
           </CardBody>
         </Card>
       </CardGroup>
