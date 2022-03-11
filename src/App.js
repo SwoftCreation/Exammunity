@@ -9,6 +9,7 @@ function App() {
     <div>
       <NavbarComponent />
       <CarouselComponent />
+      <br />
       <hr />
       <br />
       <FrontArticleComponent />

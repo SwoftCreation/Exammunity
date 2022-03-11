@@ -19,13 +19,13 @@ import {
 export default function NavbarComponent() {
   return (
     <div>
-      <Navbar color="faded" expand="md" light="true">
-        <NavbarBrand href="/">Team규은</NavbarBrand>
+      <Navbar expand="md" light="true" style={{ backgroundColor: "#E6FAFF" }}>
+        <NavbarBrand href="/">Exammunity</NavbarBrand>
         <NavbarToggler className="me-2" onClick={function noRefCheck() {}} />
         <Collapse navbar>
           <Nav className="me-auto" navbar>
             <UncontrolledDropdown inNavbar nav>
-              <DropdownToggle caret nav className="navHover">
+              <DropdownToggle caret nav id="navHover">
                 팀소개
               </DropdownToggle>
               <DropdownMenu end>
@@ -69,8 +69,11 @@ export default function NavbarComponent() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem className="navHover">
-              <NavLink href="https://github.com/SwoftCreation/react-app1">
+            <NavItem>
+              <NavLink
+                href="https://github.com/SwoftCreation/react-app1"
+                id="navHover"
+              >
                 Git주소
               </NavLink>
             </NavItem>

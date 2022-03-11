@@ -22,7 +22,7 @@ export default function FrontArticleComponent() {
             top
             width="100%"
           />
-          <CardBody>
+          <CardBody className="Cardbody">
             <CardTitle tag="h5">2021 6월평가원</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               writer: 장규은
@@ -38,7 +38,7 @@ export default function FrontArticleComponent() {
             top
             width="100%"
           />
-          <CardBody>
+          <CardBody className="Cardbody">
             <CardTitle tag="h5">2019 9월평가원</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               writer: 장규은
@@ -54,7 +54,7 @@ export default function FrontArticleComponent() {
             top
             width="100%"
           />
-          <CardBody>
+          <CardBody className="Cardbody">
             <CardTitle tag="h5">2010 3월모의고사</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               writer: 장규은

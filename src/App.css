@@ -16,8 +16,11 @@
   align-content: center;
 }
 
-.navHover:hover {
-  background-color: rgba(129, 255, 249, 0.582);
-  border-radius: 10%;
+#navHover:hover {
+  background-color: rgb(98, 166, 197);
+  border-radius: 15%;
   transition: 1s;
+  color: white;
+  text-decoration: underline;
+  transform: rotateY(360deg);
 }
