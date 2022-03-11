@@ -23,12 +23,12 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
+            <CardTitle tag="h5">2021 6월평가원</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Card subtitle
+              writer: 장규은
             </CardSubtitle>
-            <CardText>기사 1입니다</CardText>
-            <Button>Button</Button>
+            <CardText>2022.03.11</CardText>
+            <Button color="primary">시험지열람</Button>
           </CardBody>
         </Card>
         <Card>
@@ -39,12 +39,12 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
+            <CardTitle tag="h5">2019 9월평가원</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Card subtitle
+              writer: 장규은
             </CardSubtitle>
-            <CardText>기사 2입니다</CardText>
-            <Button>Button</Button>
+            <CardText>2022.03.11</CardText>
+            <Button color="primary">시험지열람</Button>
           </CardBody>
         </Card>
         <Card>
@@ -55,12 +55,12 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
+            <CardTitle tag="h5">2010 3월모의고사</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Card subtitle
+              writer: 장규은
             </CardSubtitle>
-            <CardText>기사 3입니다</CardText>
-            <Button>Button</Button>
+            <CardText>2022.03.11</CardText>
+            <Button color="primary">시험지열람</Button>
           </CardBody>
         </Card>
       </CardGroup>
