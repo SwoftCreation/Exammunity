@@ -30,7 +30,7 @@ export default function NavbarComponent() {
               <DropdownToggle caret nav id="navHover">
                 팀소개
               </DropdownToggle>
-              <DropdownMenu end>
+              <DropdownMenu end id="navOptions">
                 <DropdownItem>About Project</DropdownItem>
                 <DropdownItem>
                   Project Schedule &nbsp;
