@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import {
   Card,
   CardBody,
@@ -13,7 +14,7 @@ import {
 export default function FrontArticleComponent() {
   return (
     <div className="FrontArticleContainer">
-      <CardGroup>
+      <CardGroup style={{}}>
         <Card>
           <CardImg
             alt="Card image cap"
@@ -26,11 +27,7 @@ export default function FrontArticleComponent() {
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               Card subtitle
             </CardSubtitle>
-            <CardText>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </CardText>
+            <CardText>기사 1입니다</CardText>
             <Button>Button</Button>
           </CardBody>
         </Card>
@@ -46,10 +43,7 @@ export default function FrontArticleComponent() {
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               Card subtitle
             </CardSubtitle>
-            <CardText>
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </CardText>
+            <CardText>기사 2입니다</CardText>
             <Button>Button</Button>
           </CardBody>
         </Card>
@@ -65,11 +59,7 @@ export default function FrontArticleComponent() {
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               Card subtitle
             </CardSubtitle>
-            <CardText>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </CardText>
+            <CardText>기사 3입니다</CardText>
             <Button>Button</Button>
           </CardBody>
         </Card>
