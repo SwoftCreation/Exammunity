@@ -27,7 +27,7 @@ export default function NavbarComponent() {
               <DropdownToggle caret nav>
                 팀소개
               </DropdownToggle>
-              <DropdownMenu right>
+              <DropdownMenu end>
                 <DropdownItem>About Project</DropdownItem>
                 <DropdownItem>
                   Project Schedule{" "}
@@ -38,15 +38,15 @@ export default function NavbarComponent() {
                 <DropdownItem divider />
                 <DropdownItem href="https://www.naver.com">
                   장규은 &nbsp; &nbsp; &nbsp;
-                  <Button children={"git"} outline sm color="danger" />
+                  <Button children={"git"} outline sm="true" color="danger" />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
                   김동화 &nbsp; &nbsp; &nbsp;
-                  <Button children={"git"} outline sm color="danger" />
+                  <Button children={"git"} outline sm="true" color="danger" />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
                   임수원 &nbsp; &nbsp; &nbsp;
-                  <Button children={"git"} outline sm color="danger" />
+                  <Button children={"git"} outline sm="true" color="danger" />
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
