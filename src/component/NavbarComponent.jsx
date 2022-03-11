@@ -30,7 +30,7 @@ export default function NavbarComponent() {
               <DropdownMenu end>
                 <DropdownItem>About Project</DropdownItem>
                 <DropdownItem>
-                  Project Schedule{" "}
+                  Project Schedule
                   <Badge pill color="primary">
                     new
                   </Badge>
