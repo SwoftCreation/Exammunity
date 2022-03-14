@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/NavStyle.css";
 
 import {
@@ -19,14 +19,28 @@ import {
 } from "reactstrap";
 
 export default function NavbarComponent() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <Navbar expand="md" light="true" style={{ backgroundColor: "#E6FAFF" }}>
+      <Navbar
+        expand="lg"
+        color="light"
+        light
+        style={{ backgroundColor: "#E6FAFF" }}
+      >
         <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
           Exammunity
         </NavbarBrand>
-        <NavbarToggler className="me-2" onClick={function noRefCheck() {}} />
-        <Collapse navbar>
+        <NavbarToggler
+          className="me-2"
+          onClick={() => {
+            console.log(isOpen);
+            setIsOpen(!isOpen);
+            console.log(isOpen);
+          }}
+        />
+        <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle caret nav id="navHover">
