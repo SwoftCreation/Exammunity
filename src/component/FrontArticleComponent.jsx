@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/FrontArticleStyle.css";
+import Swal from "sweetalert2";
 import {
   Card,
   CardBody,
@@ -12,6 +13,13 @@ import {
 } from "reactstrap";
 
 export default function FrontArticleComponent() {
+  const buttonClicked = () => {
+    Swal.fire({
+      title: "알림",
+      icon: "info",
+      text: "서비스 준비중 입니다:)",
+    });
+  };
   return (
     <div className="FrontArticleContainer">
       <CardGroup style={{}}>
@@ -28,7 +36,9 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons">시험지열람</Button>
+            <Button id="FrontArticleButtons" onClick={buttonClicked}>
+              시험지열람
+            </Button>
           </CardBody>
         </Card>
         <Card>
@@ -44,7 +54,9 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons">시험지열람</Button>
+            <Button id="FrontArticleButtons" onClick={buttonClicked}>
+              시험지열람
+            </Button>
           </CardBody>
         </Card>
         <Card>
@@ -60,7 +72,9 @@ export default function FrontArticleComponent() {
               writer: 장규은
             </CardSubtitle>
             <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons">시험지열람</Button>
+            <Button id="FrontArticleButtons" onClick={buttonClicked}>
+              시험지열람
+            </Button>
           </CardBody>
         </Card>
       </CardGroup>
