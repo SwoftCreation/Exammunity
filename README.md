@@ -4,8 +4,7 @@
 react
 
 상태관리
-redux.api
-context.api
+zustand
 
 서버통신
 axios.api
