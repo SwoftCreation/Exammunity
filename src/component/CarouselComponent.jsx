@@ -1,7 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../style/CarouselStyle.css";
 import { Navbar, UncontrolledCarousel } from "reactstrap";
-import "../App.css";
 
 export default function CarouselComponent() {
   return (
