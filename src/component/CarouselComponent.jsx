@@ -3,6 +3,11 @@ import "../style/CarouselStyle.css";
 import { Navbar, UncontrolledCarousel } from "reactstrap";
 
 export default function CarouselComponent() {
+  /* 
+  TODO: 슬라이드 수정 ( 직접구현 해야할듯 ) 
+    윈도우 상에서 캐러셀이 슬라이드 될때 일시적으로 확대되었다가 
+    줄어든다
+  */
   return (
     <div className="CarouselContainer">
       <Navbar></Navbar>
