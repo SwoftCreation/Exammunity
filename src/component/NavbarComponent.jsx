@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "../style/NavStyle.css";
+import {
+  faArrowRightToBracket,
+  faCartPlus,
+  faTeeth,
+  faUserNinja,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   Navbar,
@@ -43,10 +50,14 @@ export default function NavbarComponent() {
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
             <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>ExamMarket</NavLink>
+              <NavLink>
+                ExamMarket <FontAwesomeIcon icon={faCartPlus} />
+              </NavLink>
             </NavItem>
             <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>ExamSquare</NavLink>
+              <NavLink>
+                ExamSquare <FontAwesomeIcon icon={faTeeth} />
+              </NavLink>
             </NavItem>
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle
@@ -55,7 +66,7 @@ export default function NavbarComponent() {
                 id="navHover"
                 style={{ margin: "10px" }}
               >
-                팀소개
+                팀소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
                 <DropdownItem>About Project</DropdownItem>
@@ -138,10 +149,12 @@ export default function NavbarComponent() {
             color="success"
             outline="true"
             size="sm"
-            children="로그인/회원가입"
             style={{ margin: "10px 10px 10px 10px" }}
             id="loginButton"
-          />
+          >
+            로그인 &nbsp;
+            <FontAwesomeIcon icon={faArrowRightToBracket} />
+          </Button>
           <NavbarText
             style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
           >
