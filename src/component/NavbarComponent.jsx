@@ -140,6 +140,7 @@ export default function NavbarComponent() {
             size="sm"
             children="로그인/회원가입"
             style={{ margin: "10px 10px 10px 10px" }}
+            id="loginButton"
           />
           <NavbarText
             style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
