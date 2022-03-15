@@ -89,6 +89,7 @@ export default function NavbarComponent() {
                     color="danger"
                     style={{ float: "right" }}
                     href="https://github.com/denose0120"
+                    size="sm"
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
@@ -104,10 +105,10 @@ export default function NavbarComponent() {
                   <Button
                     children={"git"}
                     outline
-                    sm="true"
                     color="danger"
                     style={{ float: "right" }}
                     href="https://github.com/imsiyong"
+                    size="sm"
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
@@ -126,6 +127,7 @@ export default function NavbarComponent() {
                     sm="true"
                     color="danger"
                     style={{ float: "right" }}
+                    size="sm"
                     href="https://github.com/SwoftCreation?tab=overview&from=2021-08-01&to=2021-08-31"
                   />
                 </DropdownItem>
