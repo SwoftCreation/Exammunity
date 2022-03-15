@@ -31,14 +31,19 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody className="Cardbody">
-            <CardTitle tag="h5">2021 6월평가원</CardTitle>
+            <CardTitle tag="h5">수능 미리보기</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               writer: 장규은
             </CardSubtitle>
-            <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons" onClick={buttonClicked}>
-              시험지열람
+            <CardText>__ 2800 COIN __</CardText>
+            <Button
+              id="FrontArticleButtons"
+              onClick={buttonClicked}
+              style={{ margin: "5px" }}
+            >
+              자세히보기
             </Button>
+            <Button color="primary">구매하기</Button>
           </CardBody>
         </Card>
         <Card>
@@ -49,14 +54,19 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody className="Cardbody">
-            <CardTitle tag="h5">2019 9월평가원</CardTitle>
+            <CardTitle tag="h5">평가원ST 기출30선</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               writer: 장규은
             </CardSubtitle>
-            <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons" onClick={buttonClicked}>
-              시험지열람
+            <CardText>__ 10000 COIN __</CardText>
+            <Button
+              id="FrontArticleButtons"
+              onClick={buttonClicked}
+              style={{ margin: "5px" }}
+            >
+              자세히보기
             </Button>
+            <Button color="primary">구매하기</Button>
           </CardBody>
         </Card>
         <Card>
@@ -67,14 +77,20 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody className="Cardbody">
-            <CardTitle tag="h5">2010 3월모의고사</CardTitle>
+            <CardTitle tag="h5">이것이 대장동이다</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              writer: 장규은
+              writer: 이재명
             </CardSubtitle>
-            <CardText>2022.03.11</CardText>
-            <Button id="FrontArticleButtons" onClick={buttonClicked}>
-              시험지열람
+            <CardText>__ 3100 COIN __</CardText>
+            <Button
+              id="FrontArticleButtons"
+              onClick={buttonClicked}
+              style={{ margin: "5px" }}
+            >
+              자세히보기
             </Button>
+
+            <Button color="primary">구매하기</Button>
           </CardBody>
         </Card>
       </CardGroup>
