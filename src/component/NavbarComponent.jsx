@@ -63,6 +63,7 @@ export default function NavbarComponent() {
                     sm="true"
                     color="danger"
                     style={{ float: "right" }}
+                    href="https://github.com/denose0120"
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
@@ -83,6 +84,7 @@ export default function NavbarComponent() {
                     sm="true"
                     color="danger"
                     style={{ float: "right" }}
+                    href="https://github.com/SwoftCreation?tab=overview&from=2021-08-01&to=2021-08-31"
                   />
                 </DropdownItem>
               </DropdownMenu>
@@ -92,7 +94,7 @@ export default function NavbarComponent() {
                 href="https://github.com/SwoftCreation/react-app1"
                 id="navHover"
               >
-                Git주소
+                프로젝트 Git주소
               </NavLink>
             </NavItem>
           </Nav>
