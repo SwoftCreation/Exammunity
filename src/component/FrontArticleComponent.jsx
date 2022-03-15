@@ -13,11 +13,27 @@ import {
 } from "reactstrap";
 
 export default function FrontArticleComponent() {
-  const buttonClicked = () => {
+  const buttonClicked = (title, text, icon) => {
     Swal.fire({
-      title: "알림",
-      icon: "info",
-      text: "서비스 준비중 입니다:)",
+      title: title,
+      icon: icon,
+      text: text,
+    });
+  };
+
+  const askBuy = (price) => {
+    Swal.fire({
+      title: "결제 안내",
+      text: price + " COIN 결제를 진행합니다",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "결제진행",
+      denyButtonText: "취소합니다",
+    }).then((result) => {
+      if (result.isConfirmed)
+        Swal.fire({ text: "결제 서비스 준비중입니다", icon: "error" });
+      else if (result.isDenied)
+        Swal.fire({ text: "결제 서비스 준비중입니다", icon: "error" });
     });
   };
   return (
@@ -38,12 +54,16 @@ export default function FrontArticleComponent() {
             <CardText>__ 2800 COIN __</CardText>
             <Button
               id="FrontArticleButtons"
-              onClick={buttonClicked}
+              onClick={() => {
+                buttonClicked("알림", "서비스 준비중입니다", "info");
+              }}
               style={{ margin: "5px" }}
             >
               자세히보기
             </Button>
-            <Button color="primary">구매하기</Button>
+            <Button color="primary" onClick={() => askBuy("2800")}>
+              구매하기
+            </Button>
           </CardBody>
         </Card>
         <Card>
@@ -61,12 +81,16 @@ export default function FrontArticleComponent() {
             <CardText>__ 10000 COIN __</CardText>
             <Button
               id="FrontArticleButtons"
-              onClick={buttonClicked}
+              onClick={() => {
+                buttonClicked("알림", "서비스 준비중입니다", "info");
+              }}
               style={{ margin: "5px" }}
             >
               자세히보기
             </Button>
-            <Button color="primary">구매하기</Button>
+            <Button color="primary" onClick={() => askBuy("10000")}>
+              구매하기
+            </Button>
           </CardBody>
         </Card>
         <Card>
@@ -84,13 +108,17 @@ export default function FrontArticleComponent() {
             <CardText>__ 3100 COIN __</CardText>
             <Button
               id="FrontArticleButtons"
-              onClick={buttonClicked}
+              onClick={() => {
+                buttonClicked("알림", "서비스 준비중입니다", "info");
+              }}
               style={{ margin: "5px" }}
             >
               자세히보기
             </Button>
 
-            <Button color="primary">구매하기</Button>
+            <Button color="primary" onClick={() => askBuy("3100")}>
+              구매하기
+            </Button>
           </CardBody>
         </Card>
       </CardGroup>
