@@ -42,14 +42,31 @@ export default function NavbarComponent() {
         />
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
+            <NavItem id="navHover" style={{ margin: "10px" }}>
+              <NavLink>ExamMarket</NavLink>
+            </NavItem>
+            <NavItem id="navHover" style={{ margin: "10px" }}>
+              <NavLink>ExamSquare</NavLink>
+            </NavItem>
             <UncontrolledDropdown inNavbar nav>
-              <DropdownToggle caret nav id="navHover">
+              <DropdownToggle
+                caret
+                nav
+                id="navHover"
+                style={{ margin: "10px" }}
+              >
                 팀소개
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
                 <DropdownItem>About Project</DropdownItem>
                 <DropdownItem>
                   Project Schedule &nbsp;
+                  <Badge pill color="primary">
+                    new
+                  </Badge>
+                </DropdownItem>
+                <DropdownItem href="https://github.com/SwoftCreation/react-app1">
+                  Project Git &nbsp;
                   <Badge pill color="primary">
                     new
                   </Badge>
@@ -90,16 +107,19 @@ export default function NavbarComponent() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem>
-              <NavLink
-                href="https://github.com/SwoftCreation/react-app1"
-                id="navHover"
-              >
-                프로젝트 Git주소
-              </NavLink>
-            </NavItem>
           </Nav>
-          <NavbarText>2022 Software Project</NavbarText>
+          <Button
+            color="success"
+            outline="true"
+            size="sm"
+            children="로그인/회원가입"
+            style={{ margin: "10px 10px 10px 10px" }}
+          />
+          <NavbarText
+            style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
+          >
+            2022 Software Project
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
