@@ -29,3 +29,8 @@
   font-size: 13px;
   transition: 0.5s;
 }
+
+#loginButton:not(:hover) {
+  font-size: 10px;
+  transition: 0.5s;
+}
