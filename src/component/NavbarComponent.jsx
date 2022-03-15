@@ -5,6 +5,7 @@ import {
   faCartPlus,
   faTeeth,
   faUserNinja,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -84,7 +85,8 @@ export default function NavbarComponent() {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="https://www.naver.com">
-                  장규은{" "}
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;장규은&nbsp;
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -104,7 +106,8 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
-                  김동화{" "}
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;김동화&nbsp;
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -123,7 +126,8 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
-                  임수원{" "}
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;임수원&nbsp;
                   <span
                     style={{
                       fontSize: "xx-small",
