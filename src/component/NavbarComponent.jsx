@@ -74,6 +74,7 @@ export default function NavbarComponent() {
                     sm="true"
                     color="danger"
                     style={{ float: "right" }}
+                    href="https://github.com/imsiyong"
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
