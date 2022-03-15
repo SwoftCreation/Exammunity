@@ -73,7 +73,15 @@ export default function NavbarComponent() {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="https://www.naver.com">
-                  장규은
+                  장규은{" "}
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    서버
+                  </span>
                   <Button
                     children={"git"}
                     outline
@@ -84,7 +92,15 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
-                  김동화
+                  김동화{" "}
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    백엔드
+                  </span>
                   <Button
                     children={"git"}
                     outline
@@ -95,7 +111,15 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
                 <DropdownItem href="https://www.naver.com">
-                  임수원
+                  임수원{" "}
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    프론트엔드
+                  </span>
                   <Button
                     children={"git"}
                     outline
