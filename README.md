@@ -18,3 +18,6 @@ sweetAlert2
 
 세부레이아웃조정
 flexbox 
+
+스크롤 애니메이션
+react-reveal
