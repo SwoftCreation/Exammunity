@@ -71,7 +71,7 @@ export default function NavbarComponent() {
                 팀소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <DropdownItem>About Project</DropdownItem>
+                <DropdownItem href="/Team">About Project</DropdownItem>
                 <DropdownItem>
                   Project Schedule &nbsp;
                   <Badge pill color="primary">
@@ -85,7 +85,7 @@ export default function NavbarComponent() {
                   </Badge>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="https://www.naver.com">
+                <DropdownItem href="/Gyu">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;장규은&nbsp;
                   <span
@@ -106,7 +106,7 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="https://www.naver.com">
+                <DropdownItem href="/Dong">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;김동화&nbsp;
                   <span
@@ -126,7 +126,7 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="https://www.naver.com">
+                <DropdownItem href="/Soo">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;임수원&nbsp;
                   <span
