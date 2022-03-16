@@ -97,6 +97,7 @@ export default function NavbarComponent() {
                     서버
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     sm="true"
@@ -118,6 +119,7 @@ export default function NavbarComponent() {
                     백엔드
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     color="danger"
@@ -138,6 +140,7 @@ export default function NavbarComponent() {
                     프론트엔드
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     sm="true"
