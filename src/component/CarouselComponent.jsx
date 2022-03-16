@@ -8,6 +8,7 @@ export default function CarouselComponent() {
     윈도우 상에서 캐러셀이 슬라이드 될때 일시적으로 확대되었다가 
     줄어든다
   */
+
   return (
     <div className="CarouselContainer">
       <Navbar></Navbar>

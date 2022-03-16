@@ -66,6 +66,7 @@ export default function FrontArticleComponent() {
             </Button>
           </CardBody>
         </Card>
+
         <Card>
           <CardImg
             alt="Card image cap"
@@ -93,6 +94,7 @@ export default function FrontArticleComponent() {
             </Button>
           </CardBody>
         </Card>
+
         <Card>
           <CardImg
             alt="Card image cap"
