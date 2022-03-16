@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
+
 import {
   faArrowRightToBracket,
   faCartPlus,
@@ -7,7 +9,6 @@ import {
   faUserNinja,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   Navbar,

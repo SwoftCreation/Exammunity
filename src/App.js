@@ -1,24 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import CarouselComponent from "./component/CarouselComponent";
-import FrontArticleComponent from "./component/FrontArticleComponent";
-import NavbarComponent from "./component/NavbarComponent";
+import { Route } from "react-router-dom";
+import Soo from "./introduce/Soo";
+import Gyu from "./introduce/Gyu";
+import Dong from "./introduce/Dong";
+import Home from "./Home";
 
 function App() {
   return (
     <div>
-      <NavbarComponent />
-
-      <CarouselComponent />
-
-      <br />
-      <hr />
-      <br />
-      <FrontArticleComponent />
-
-      <p>Markup that will be revealed on scroll</p>
+      <Route path="/" component={Home} exact={true} />
+      <Route path="/Soo" component={Soo} exact={true} />
     </div>
   );
 }
