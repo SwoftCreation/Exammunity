@@ -5,17 +5,19 @@ import { Route } from "react-router-dom";
 import Soo from "./introduce/Soo";
 import Gyu from "./introduce/Gyu";
 import Dong from "./introduce/Dong";
-import Home from "./Home";
+import Home from "./component/Home";
 import Team from "./introduce/Team";
+import ExamMarket from "./component/ExamMarket";
 
 function App() {
   return (
     <div>
-      <Route path="/" component={Home} exact={true} />
-      <Route path="/Soo" component={Soo} exact={true} />
-      <Route path="/Dong" component={Dong} exact={true} />
-      <Route path="/Gyu" component={Gyu} exact={true} />
-      <Route path="/Team" component={Team} exact={true} />
+      <Route path="/" component={Home} exact="true" />
+      <Route path="/introduce/Soo" component={Soo} />
+      <Route path="/introduce/Dong" component={Dong} />
+      <Route path="/introduce/Gyu" component={Gyu} />
+      <Route path="/introduce/Team" component={Team} />
+      <Route path="/ExamMarket" component={ExamMarket} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
+import { loginBtnClicked } from "../inAction/loginButton";
 
 import {
   faArrowRightToBracket,
@@ -159,6 +160,7 @@ export default function NavbarComponent() {
             size="sm"
             style={{ margin: "10px 10px 10px 10px" }}
             id="loginButton"
+            onClick={loginBtnClicked}
           >
             로그인 &nbsp;
             <FontAwesomeIcon icon={faArrowRightToBracket} />

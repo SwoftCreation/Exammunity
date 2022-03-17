@@ -1,8 +1,7 @@
 import React from "react";
-
-import CarouselComponent from "./component/CarouselComponent";
-import NavbarComponent from "./component/NavbarComponent";
-import FrontArticleComponent from "./component/FrontArticleComponent";
+import CarouselComponent from "./CarouselComponent";
+import FrontArticleComponent from "./FrontArticleComponent";
+import NavbarComponent from "./NavbarComponent";
 
 function Home() {
   return (
