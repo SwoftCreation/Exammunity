@@ -8,6 +8,7 @@ import Dong from "./introduce/Dong";
 import Home from "./component/Home";
 import Team from "./introduce/Team";
 import ExamMarket from "./component/ExamMarket";
+import ExamSquare from "./component/ExamSquare";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/introduce/Gyu" component={Gyu} />
       <Route path="/introduce/Team" component={Team} />
       <Route path="/ExamMarket" component={ExamMarket} />
+      <Route path="/ExamSquare" component={ExamSquare} />
     </div>
   );
 }

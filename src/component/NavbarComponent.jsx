@@ -53,12 +53,12 @@ export default function NavbarComponent() {
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
             <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>
+              <NavLink href="/ExamMarket">
                 ExamMarket <FontAwesomeIcon icon={faCartPlus} />
               </NavLink>
             </NavItem>
             <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>
+              <NavLink href="/ExamSquare">
                 ExamSquare <FontAwesomeIcon icon={faTeeth} />
               </NavLink>
             </NavItem>
@@ -72,7 +72,9 @@ export default function NavbarComponent() {
                 팀소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <DropdownItem href="/Team">About Project</DropdownItem>
+                <DropdownItem href="/introduce/Team">
+                  About Project
+                </DropdownItem>
                 <DropdownItem>
                   Project Schedule &nbsp;
                   <Badge pill color="primary">
@@ -86,7 +88,7 @@ export default function NavbarComponent() {
                   </Badge>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="/Gyu">
+                <DropdownItem href="/introduce/Gyu">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;장규은&nbsp;
                   <span
@@ -108,7 +110,7 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="/Dong">
+                <DropdownItem href="/introduce/Dong">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;김동화&nbsp;
                   <span
@@ -129,7 +131,7 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="/Soo">
+                <DropdownItem href="/introduce/Soo">
                   <FontAwesomeIcon icon={faArrowRight} />
                   &nbsp;임수원&nbsp;
                   <span

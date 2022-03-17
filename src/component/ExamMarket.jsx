@@ -4,6 +4,7 @@ export default function ExamMarket() {
   return (
     <div>
       <NavbarComponent />
+      <h1>ExamMarket</h1>
     </div>
   );
 }
