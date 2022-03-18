@@ -20,4 +20,4 @@ sweetAlert2
 flexbox 
 
 스크롤 애니메이션
-react-reveal
+
