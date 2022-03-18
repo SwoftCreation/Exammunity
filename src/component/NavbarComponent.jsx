@@ -29,6 +29,10 @@ import {
   NavbarText,
 } from "reactstrap";
 
+/*
+  NavbarComponent : 상단 네비게이션 바
+ */
+
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -53,16 +57,20 @@ export default function NavbarComponent() {
         />
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
-            <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink href="/ExamMarket">
-                ExamMarket <FontAwesomeIcon icon={faCartPlus} />
-              </NavLink>
-            </NavItem>
-            <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink href="/ExamSquare">
-                ExamSquare <FontAwesomeIcon icon={faTeeth} />
-              </NavLink>
-            </NavItem>
+            <Link to="/ExamMarket">
+              <NavItem id="navHover" style={{ margin: "10px" }}>
+                <NavLink>
+                  ExamMarket <FontAwesomeIcon icon={faCartPlus} />
+                </NavLink>
+              </NavItem>
+            </Link>
+            <Link to="/ExamSquare">
+              <NavItem id="navHover" style={{ margin: "10px" }}>
+                <NavLink>
+                  ExamSquare <FontAwesomeIcon icon={faTeeth} />
+                </NavLink>
+              </NavItem>
+            </Link>
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle
                 caret
@@ -73,21 +81,23 @@ export default function NavbarComponent() {
                 팀소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <DropdownItem href="/introduce/Team">
-                  About Project
-                </DropdownItem>
+                <Link to="introduce/Team">
+                  <DropdownItem>About Project</DropdownItem>
+                </Link>
                 <DropdownItem>
                   Project Schedule &nbsp;
                   <Badge pill color="primary">
                     new
                   </Badge>
                 </DropdownItem>
+
                 <DropdownItem href="https://github.com/SwoftCreation/react-app1">
                   Project Git &nbsp;
                   <Badge pill color="primary">
                     new
                   </Badge>
                 </DropdownItem>
+
                 <DropdownItem divider />
                 <DropdownItem>
                   <Link to="/introduce/Gyu">
