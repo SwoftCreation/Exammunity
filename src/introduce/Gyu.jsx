@@ -11,4 +11,3 @@ function Gyu() {
 }
 
 export default Gyu;
-np;

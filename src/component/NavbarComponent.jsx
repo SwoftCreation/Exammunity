@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
 import { loginBtnClicked } from "../inAction/loginButton";
+import { Link } from "react-router-dom";
 
 import {
   faArrowRightToBracket,
@@ -88,9 +89,11 @@ export default function NavbarComponent() {
                   </Badge>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="/introduce/Gyu">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                  &nbsp;장규은&nbsp;
+                <DropdownItem>
+                  <Link to="/introduce/Gyu">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;장규은&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -110,9 +113,11 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="/introduce/Dong">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                  &nbsp;김동화&nbsp;
+                <DropdownItem>
+                  <Link to="/introduce/Dong">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;김동화&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -132,8 +137,10 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
                 <DropdownItem href="/introduce/Soo">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                  &nbsp;임수원&nbsp;
+                  <Link to="/introduce/Soo">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;임수원&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
