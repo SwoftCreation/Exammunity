@@ -1,5 +1,8 @@
 2022 [공학설계필수 전공] 소프트웨어프로젝트
 
+구현
+SPA
+
 프론트엔드
 <img src="https://img.shields.io/badge/-React-<red>?logo=React&logoColor=red&color=61DAFB"/>
 
@@ -20,4 +23,7 @@ sweetAlert2
 flexbox 
 
 스크롤 애니메이션
+직접구현예정
 
+로그인, 커뮤니티DB
+Firebase
