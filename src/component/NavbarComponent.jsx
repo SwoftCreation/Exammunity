@@ -1,5 +1,16 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
+import { loginBtnClicked } from "../inAction/loginButton";
+import { Link } from "react-router-dom";
+
+import {
+  faArrowRightToBracket,
+  faCartPlus,
+  faTeeth,
+  faUserNinja,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import {
   Navbar,
@@ -17,6 +28,10 @@ import {
   Badge,
   NavbarText,
 } from "reactstrap";
+
+/*
+  NavbarComponent : 상단 네비게이션 바
+ */
 
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,12 +57,20 @@ export default function NavbarComponent() {
         />
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
-            <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>ExamMarket</NavLink>
-            </NavItem>
-            <NavItem id="navHover" style={{ margin: "10px" }}>
-              <NavLink>ExamSquare</NavLink>
-            </NavItem>
+            <Link to="/ExamMarket">
+              <NavItem id="navHover" style={{ margin: "10px" }}>
+                <NavLink>
+                  ExamMarket <FontAwesomeIcon icon={faCartPlus} />
+                </NavLink>
+              </NavItem>
+            </Link>
+            <Link to="/ExamSquare">
+              <NavItem id="navHover" style={{ margin: "10px" }}>
+                <NavLink>
+                  ExamSquare <FontAwesomeIcon icon={faTeeth} />
+                </NavLink>
+              </NavItem>
+            </Link>
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle
                 caret
@@ -55,25 +78,32 @@ export default function NavbarComponent() {
                 id="navHover"
                 style={{ margin: "10px" }}
               >
-                팀소개
+                팀소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <DropdownItem>About Project</DropdownItem>
+                <Link to="introduce/Team">
+                  <DropdownItem>About Project</DropdownItem>
+                </Link>
                 <DropdownItem>
                   Project Schedule &nbsp;
                   <Badge pill color="primary">
                     new
                   </Badge>
                 </DropdownItem>
+
                 <DropdownItem href="https://github.com/SwoftCreation/react-app1">
                   Project Git &nbsp;
                   <Badge pill color="primary">
                     new
                   </Badge>
                 </DropdownItem>
+
                 <DropdownItem divider />
-                <DropdownItem href="https://www.naver.com">
-                  장규은{" "}
+                <DropdownItem>
+                  <Link to="/introduce/Gyu">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;장규은&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -83,6 +113,7 @@ export default function NavbarComponent() {
                     서버
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     sm="true"
@@ -92,8 +123,11 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="https://www.naver.com">
-                  김동화{" "}
+                <DropdownItem>
+                  <Link to="/introduce/Dong">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;김동화&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -103,6 +137,7 @@ export default function NavbarComponent() {
                     백엔드
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     color="danger"
@@ -111,8 +146,11 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem href="https://www.naver.com">
-                  임수원{" "}
+                <DropdownItem href="/introduce/Soo">
+                  <Link to="/introduce/Soo">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;임수원&nbsp;
+                  </Link>
                   <span
                     style={{
                       fontSize: "xx-small",
@@ -122,6 +160,7 @@ export default function NavbarComponent() {
                     프론트엔드
                   </span>
                   <Button
+                    className="gitButton"
                     children={"git"}
                     outline
                     sm="true"
@@ -138,10 +177,13 @@ export default function NavbarComponent() {
             color="success"
             outline="true"
             size="sm"
-            children="로그인/회원가입"
             style={{ margin: "10px 10px 10px 10px" }}
             id="loginButton"
-          />
+            onClick={loginBtnClicked}
+          >
+            로그인 &nbsp;
+            <FontAwesomeIcon icon={faArrowRightToBracket} />
+          </Button>
           <NavbarText
             style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
           >
