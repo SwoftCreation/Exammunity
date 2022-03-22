@@ -78,7 +78,7 @@ export default function NavbarComponent() {
                 id="navHover"
                 style={{ margin: "10px" }}
               >
-                팀소개 <FontAwesomeIcon icon={faUserNinja} />
+                Team소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
                 <Link to="introduce/Team">
