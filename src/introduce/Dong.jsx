@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarComponent from "../component/NavbarComponent";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import "../style/introduce.css";
 import {
   faPager,
   faDesktop,
@@ -13,7 +13,7 @@ function Dong() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      delay: 1000,
+      delay: 500,
     });
   });
   return (
@@ -23,7 +23,7 @@ function Dong() {
       <br />
       <hr />
       <br />
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" className="Introduce">
         <h1>
           <br />
           김동화

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavbarComponent from "../component/NavbarComponent";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import "../style/introduce.css";
 import {
   faPager,
   faDesktop,
@@ -13,7 +13,7 @@ function Soo() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      delay: 1000,
+      delay: 500,
     });
   });
   return (
@@ -23,7 +23,7 @@ function Soo() {
       <br />
       <hr />
       <br />
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" className="Introduce">
         <h1>
           <br />
           임수원
@@ -58,9 +58,7 @@ function Soo() {
         <p>
           숭실대 소프트웨어학부 재학중인 임수원입니다.
           <br />
-          <br />
           현재 웹 프론트엔드 개발자를 목표로 공부 중입니다.
-          <br />
           <br />
           기회가 된다면 블록체인을 웹에 적용해보는 공부를 해보고 싶습니다.
         </p>
