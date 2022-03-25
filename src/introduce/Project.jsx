@@ -23,9 +23,9 @@ function Project() {
 
       <img
         src={image1}
-        style={{ width: "50%", height: "10%" }}
         alt="image1"
         data-aos="fade-up"
+        className="projectImage"
       />
       <br />
       <hr />

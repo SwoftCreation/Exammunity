@@ -20,3 +20,10 @@
   font-size: 1.5rem;
   line-height: 3rem;
 }
+
+.projectImage {
+  width: 80vw;
+  height: 40vh;
+  display: block;
+  margin: auto;
+}
