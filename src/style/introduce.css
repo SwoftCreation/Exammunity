@@ -3,6 +3,10 @@
 .Introduce {
   font-family: "Gugi", cursive;
   text-align: center;
+  border-style: dashed;
+  width: 40vw;
+  margin: auto;
+  padding: 1rem;
 }
 
 .Introduce p {
@@ -22,8 +26,8 @@
 }
 
 .projectImage {
-  width: 80vw;
-  height: 40vh;
+  width: 90vw;
+  height: 50vh;
   display: block;
-  margin: auto;
+  margin: 10vh auto 10vh;
 }
