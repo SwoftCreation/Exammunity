@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 import NavbarComponent from "../component/NavbarComponent";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import styled from "styled-components";
+
 import image1 from "./carousel2.png";
 
-const introduceBox = styled.div``;
 function Project() {
   useEffect(() => {
     AOS.init({
