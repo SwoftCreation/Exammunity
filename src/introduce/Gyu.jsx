@@ -11,10 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 function Gyu() {
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      delay: 500,
-    });
+    AOS.init({});
   });
   return (
     <div>
@@ -24,36 +21,40 @@ function Gyu() {
       <hr />
       <br />
 
-      <div data-aos="fade-up" className="Introduce">
-        <h1>
+      <div className="Introduce">
+        <h1 data-aos="fade-up" data-aos-delay="300">
           <br />
           장규은
         </h1>
         <br />
-        <h4>
-          <FontAwesomeIcon icon={faPager} />
-          &nbsp; Language
+        <div data-aos="fade-up" data-aos-delay="600">
+          <h4>
+            <FontAwesomeIcon icon={faPager} />
+            &nbsp; Language
+            <br />
+          </h4>
           <br />
-        </h4>
-        <br />
-        <h4>
-          <FontAwesomeIcon icon={faDesktop} />
-          &nbsp; Tech
+          <h4>
+            <FontAwesomeIcon icon={faDesktop} />
+            &nbsp; Tech
+            <br />
+          </h4>
           <br />
-        </h4>
-        <br />
-        <h4>
-          <FontAwesomeIcon icon={faOtter} />
-          &nbsp; Hobby
-          <br />
-        </h4>
+          <h4>
+            <FontAwesomeIcon icon={faOtter} />
+            &nbsp; Hobby
+            <br />
+          </h4>
+        </div>
         <br />
         <hr />
-        <h4>
-          <FontAwesomeIcon icon={faFaceKissWinkHeart} />
-          &nbsp;About me!
-        </h4>
-        숭실대 소프트웨어학부 재학중인 장규은입니다.
+        <div data-aos="fade-up" data-aos-delay="900">
+          <h4>
+            <FontAwesomeIcon icon={faFaceKissWinkHeart} />
+            &nbsp;About me!
+          </h4>
+          숭실대 소프트웨어학부 재학중인 장규은입니다.
+        </div>
       </div>
     </div>
   );
