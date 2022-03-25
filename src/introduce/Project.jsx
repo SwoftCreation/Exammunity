@@ -16,6 +16,10 @@ function Project() {
   return (
     <div style={{ float: "center" }}>
       <NavbarComponent />
+      <br />
+      <br />
+      <hr />
+      <br />
       <img
         src={image1}
         style={{ width: "50%", height: "10%" }}
