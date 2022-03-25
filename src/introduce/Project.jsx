@@ -19,7 +19,6 @@ function Project() {
       <br />
       <br />
       <hr />
-      <br />
 
       <img
         src={image1}
@@ -27,7 +26,7 @@ function Project() {
         data-aos="fade-up"
         className="projectImage"
       />
-      <br />
+
       <hr />
       <br />
       <div className="Introduce" data-aos="fade-right">
