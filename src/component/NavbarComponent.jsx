@@ -81,15 +81,17 @@ export default function NavbarComponent() {
                 Team소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <Link to="introduce/Team">
+                <Link to="/introduce/Team">
                   <DropdownItem>About Project</DropdownItem>
                 </Link>
-                <DropdownItem>
-                  Project Schedule &nbsp;
-                  <Badge pill color="primary">
-                    new
-                  </Badge>
-                </DropdownItem>
+                <Link to="/introduce/Schedule">
+                  <DropdownItem>
+                    Project Schedule &nbsp;
+                    <Badge pill color="primary">
+                      new
+                    </Badge>
+                  </DropdownItem>
+                </Link>
 
                 <DropdownItem href="https://github.com/SwoftCreation/react-app1">
                   Project Git &nbsp;

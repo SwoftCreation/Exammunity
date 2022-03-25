@@ -12,6 +12,7 @@ function Project() {
       duration: 3000,
     });
   });
+
   return (
     <div style={{ float: "center" }}>
       <NavbarComponent />

@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+import AOS from "aos";
+import NavbarComponent from "../component/NavbarComponent";
 
 function Schedule() {
-  return <h1>Project Schedule</h1>;
+  const [value, onChange] = useState(new Date());
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      delay: 1000,
+    });
+  });
+  return (
+    <div>
+      <NavbarComponent />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <div data-aos="fade-up">
+        <Calendar onChange={onChange} value={value} />
+      </div>
+    </div>
+  );
 }
 
 export default Schedule;
