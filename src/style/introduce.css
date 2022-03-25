@@ -2,10 +2,13 @@
 
 .Introduce {
   font-family: "Gugi", cursive;
+  text-align: center;
 }
 
 .Introduce p {
   font-size: 15px;
+  line-height: 2rem;
+  text-align: left;
 }
 
 .Introduce h1 {
@@ -14,4 +17,5 @@
 
 .Introduce h4 {
   font-size: 1.5rem;
+  line-height: 3rem;
 }

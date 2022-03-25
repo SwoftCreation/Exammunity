@@ -20,6 +20,7 @@ function Project() {
       <br />
       <hr />
       <br />
+
       <img
         src={image1}
         style={{ width: "50%", height: "10%" }}
