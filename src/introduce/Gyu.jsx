@@ -4,7 +4,7 @@ import AOS from "aos";
 function Gyu() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       delay: 1000,
     });
   });
