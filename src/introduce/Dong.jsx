@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import NavbarComponent from "../component/NavbarComponent";
 import AOS from "aos";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faPager,
+  faDesktop,
+  faFaceKissWinkHeart,
+  faOtter,
+} from "@fortawesome/free-solid-svg-icons";
 function Dong() {
   useEffect(() => {
     AOS.init({
@@ -16,17 +24,39 @@ function Dong() {
       <hr />
       <br />
       <div data-aos="fade-up">
-        <h1>김동화</h1>
-        <br />
-        <h4>Languages | C C++ node.js</h4>
-        <h4>Hobby | 독서와 명상</h4>
-        <br />
-        <p>
-          소프트웨어학부에 재학 중인 3학년 김동화입니다.
+        <h1>
           <br />
+          김동화
+        </h1>
+        <br />
+        <h4>
+          <FontAwesomeIcon icon={faPager} />
+          &nbsp; Language
+          <br />C C++
+        </h4>
+        <br />
+        <h4>
+          <FontAwesomeIcon icon={faDesktop} />
+          &nbsp; Tech
           <br />
-          현재 백엔드 개발을 공부 중입니다.
-        </p>
+          Node.js
+        </h4>
+        <br />
+        <h4>
+          <FontAwesomeIcon icon={faOtter} />
+          &nbsp; Hobby
+          <br />
+          독서와 명상
+        </h4>
+        <br />
+        <hr />
+        <h4>
+          <FontAwesomeIcon icon={faFaceKissWinkHeart} />
+          &nbsp;About me!
+        </h4>
+        숭실대 소프트웨어학부 재학중인 김동화입니다.
+        <br />
+        현재 백엔드 개발을 공부 중입니다
       </div>
     </div>
   );
