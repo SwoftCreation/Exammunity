@@ -40,7 +40,7 @@ function Soo() {
           <FontAwesomeIcon icon={faDesktop} />
           &nbsp; Tech
           <br />
-          Javascript React Redux.api
+          React Redux.api
         </h4>
         <br />
         <h4>
