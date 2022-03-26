@@ -7,10 +7,7 @@ import image1 from "./carousel2.png";
 
 function Project() {
   useEffect(() => {
-    AOS.init({
-      delay: 1000,
-      duration: 3000,
-    });
+    AOS.init({});
   });
 
   return (
@@ -20,16 +17,18 @@ function Project() {
       <br />
       <hr />
 
-      <img
-        src={image1}
-        alt="image1"
-        data-aos="fade-up"
-        className="projectImage"
-      />
+      <figure data-aos="fade-up" data-aos-delay="300">
+        <img
+          src={image1}
+          alt="image1"
+          data-aos="fade-up"
+          className="projectImage"
+        />
+      </figure>
 
       <hr />
       <br />
-      <div className="Introduce" data-aos="fade-right">
+      <div className="Introduce" data-aos="fade-up" data-aos-delay="500">
         <h1>
           <strong>Exammunity</strong> 프로젝트 소개
         </h1>

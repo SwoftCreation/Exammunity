@@ -20,7 +20,7 @@ function Schedule() {
       <br />
       <hr />
       <br />
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" id="introduceCalendar">
         <Calendar onChange={onChange} value={value} />
       </div>
     </div>

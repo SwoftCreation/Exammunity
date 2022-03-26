@@ -35,3 +35,8 @@
   display: block;
   margin: 5vh auto 5vh;
 }
+
+#introduceCalendar {
+  display: block;
+  margin: auto auto;
+}
