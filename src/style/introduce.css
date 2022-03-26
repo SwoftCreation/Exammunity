@@ -36,7 +36,7 @@
   margin: 5vh auto 5vh;
 }
 
-#introduceCalendar {
+.calendar {
   display: block;
   margin: auto;
 }

@@ -20,8 +20,8 @@ function Schedule() {
       <br />
       <hr />
       <br />
-      <div data-aos="fade-up" id="introduceCalendar">
-        <Calendar onChange={onChange} value={value} />
+      <div data-aos="fade-up">
+        <Calendar onChange={onChange} value={value} className="calendar" />
       </div>
     </div>
   );
