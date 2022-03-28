@@ -112,7 +112,7 @@ export default function NavbarComponent() {
                       textDecoration: "underline",
                     }}
                   >
-                    서버
+                    백엔드
                   </span>
                   <Button
                     className="gitButton"
