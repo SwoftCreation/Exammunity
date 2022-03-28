@@ -23,13 +23,13 @@ function App() {
       <Route path="/" component={Home} exact="true" />
 
       <Route path="/introduce/Schedule" component={Schedule} exact="true" />
-      <Route path="/introduce/Soo" component={Soo} exact="true" />
-      <Route path="/introduce/Dong" component={Dong} exact="true" />
-      <Route path="/introduce/Gyu" component={Gyu} exact="true" />
-      <Route path="/introduce/Team" component={Project} exact="true" />
+      <Route path="/introduce/Soo" component={Soo} />
+      <Route path="/introduce/Dong" component={Dong} />
+      <Route path="/introduce/Gyu" component={Gyu} />
+      <Route path="/introduce/Team" component={Project} />
 
-      <Route path="/ExamMarket" component={ExamMarket} exact="true" />
-      <Route path="/ExamSquare" component={ExamSquare} exact="true" />
+      <Route path="/ExamMarket" component={ExamMarket} />
+      <Route path="/ExamSquare" component={ExamSquare} />
     </div>
   );
 }
