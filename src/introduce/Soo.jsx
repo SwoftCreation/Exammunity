@@ -9,6 +9,7 @@ import {
   faFaceKissWinkHeart,
   faOtter,
 } from "@fortawesome/free-solid-svg-icons";
+import FooterComponent from "../component/FooterComponent";
 function Soo() {
   useEffect(() => {
     AOS.init({});
@@ -64,6 +65,7 @@ function Soo() {
           </p>
         </div>
       </div>
+      <FooterComponent />
     </div>
   );
 }

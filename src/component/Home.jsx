@@ -12,6 +12,8 @@ function Home() {
       <hr />
       <br />
       <FrontArticleComponent data-aos="fade-up" />
+      <br />
+
       <FooterComponent />
     </div>
   );

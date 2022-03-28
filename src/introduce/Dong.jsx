@@ -9,6 +9,7 @@ import {
   faFaceKissWinkHeart,
   faOtter,
 } from "@fortawesome/free-solid-svg-icons";
+import FooterComponent from "../component/FooterComponent";
 function Dong() {
   useEffect(() => {
     AOS.init({});
@@ -59,6 +60,7 @@ function Dong() {
           현재 백엔드 개발을 공부 중입니다
         </div>
       </div>
+      <FooterComponent />
     </div>
   );
 }

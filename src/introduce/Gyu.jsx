@@ -9,6 +9,7 @@ import {
   faFaceKissWinkHeart,
   faOtter,
 } from "@fortawesome/free-solid-svg-icons";
+import FooterComponent from "../component/FooterComponent";
 function Gyu() {
   useEffect(() => {
     AOS.init({});
@@ -59,6 +60,7 @@ function Gyu() {
           {"\n"}대학원 가버려~
         </div>
       </div>
+      <FooterComponent />
     </div>
   );
 }

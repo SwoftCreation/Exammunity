@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../style/introduce.css";
 import image1 from "./carousel2.png";
+import FooterComponent from "../component/FooterComponent";
 
 function Project() {
   useEffect(() => {
@@ -44,6 +45,7 @@ function Project() {
           necessitatibus. Nesciunt!
         </p>
       </div>
+      <FooterComponent />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "reactstrap";
+
 import "../style/NavStyle.css";
 /*
   TODO:
@@ -7,8 +9,11 @@ import "../style/NavStyle.css";
 function FooterComponent() {
   return (
     <div className="footer">
-      <h1>Exammunity</h1>
-      <p>문의사항은 instagram @ExammunityOfficial로 DM주시길 바랍니다</p>
+      DM to instagram @ExammunityOfficial
+      <br />
+      Email to [ studentlimsoo@gmail.com ]
+      <br />
+      Copyright 2022, Exammunity, All Rights Reserved
     </div>
   );
 }

@@ -55,3 +55,13 @@
   padding: 2px 10px 1px 10px;
   transition: 0.5s;
 }
+
+.footer {
+  padding-left: 68vw;
+  background-color: rgba(128, 128, 128, 0.329);
+  font-size: 0.8rem;
+}
+
+#footerButton {
+  float: left;
+}

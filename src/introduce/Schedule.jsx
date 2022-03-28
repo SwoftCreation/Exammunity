@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import AOS from "aos";
 import NavbarComponent from "../component/NavbarComponent";
+import FooterComponent from "../component/FooterComponent";
 
 function Schedule() {
   const [value, onChange] = useState(new Date());
@@ -23,6 +24,7 @@ function Schedule() {
       <div data-aos="fade-up">
         <Calendar onChange={onChange} value={value} className="calendar" />
       </div>
+      <FooterComponent />
     </div>
   );
 }
