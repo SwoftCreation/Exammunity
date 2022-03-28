@@ -11,7 +11,6 @@ import {
   CardImg,
   CardGroup,
 } from "reactstrap";
-import { eventWrapper } from "@testing-library/user-event/dist/utils";
 
 export default function FrontArticleComponent() {
   const buttonClicked = (title, text, icon) => {

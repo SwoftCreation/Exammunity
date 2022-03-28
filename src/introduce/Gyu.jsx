@@ -31,7 +31,7 @@ function Gyu() {
           <h4>
             <FontAwesomeIcon icon={faPager} />
             &nbsp; Language
-            <br />
+            <br />C C++ Java
           </h4>
           <br />
           <h4>
@@ -44,6 +44,7 @@ function Gyu() {
             <FontAwesomeIcon icon={faOtter} />
             &nbsp; Hobby
             <br />
+            농구 사진찍기 음악듣기
           </h4>
         </div>
         <br />
@@ -53,7 +54,9 @@ function Gyu() {
             <FontAwesomeIcon icon={faFaceKissWinkHeart} />
             &nbsp;About me!
           </h4>
-          숭실대 소프트웨어학부 재학중인 장규은입니다.
+          숭실대 소프트웨어학부 재학중인 장규은입니다. 많이 배우고 싶어요
+          보안분야에 관심이 있습니다.
+          {"\n"}대학원 가버려~
         </div>
       </div>
     </div>
