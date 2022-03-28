@@ -2,7 +2,7 @@ import React from "react";
 import CarouselComponent from "./CarouselComponent";
 import FrontArticleComponent from "./FrontArticleComponent";
 import NavbarComponent from "./NavbarComponent";
-
+import FooterComponent from "./FooterComponent";
 function Home() {
   return (
     <div>
@@ -12,6 +12,7 @@ function Home() {
       <hr />
       <br />
       <FrontArticleComponent data-aos="fade-up" />
+      <FooterComponent />
     </div>
   );
 }

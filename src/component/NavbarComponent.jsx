@@ -116,7 +116,7 @@ export default function NavbarComponent() {
                   </span>
                   <Button
                     className="gitButton"
-                    children={"git"}
+                    children="git"
                     outline
                     sm="true"
                     color="danger"
@@ -140,7 +140,7 @@ export default function NavbarComponent() {
                   </span>
                   <Button
                     className="gitButton"
-                    children={"git"}
+                    children="git"
                     outline
                     color="danger"
                     style={{ float: "right" }}
@@ -163,7 +163,7 @@ export default function NavbarComponent() {
                   </span>
                   <Button
                     className="gitButton"
-                    children={"git"}
+                    children="git"
                     outline
                     sm="true"
                     color="danger"
