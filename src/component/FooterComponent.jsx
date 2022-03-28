@@ -9,11 +9,13 @@ import "../style/NavStyle.css";
 function FooterComponent() {
   return (
     <div className="footer">
-      DM to instagram @ExammunityOfficial
-      <br />
-      Email to [ studentlimsoo@gmail.com ]
-      <br />
-      Copyright 2022, Exammunity, All Rights Reserved
+      <div className="footerContent">
+        DM to instagram @ExammunityOfficial
+        <br />
+        Email to [ studentlimsoo@gmail.com ]
+        <br />
+        Copyright 2022, Exammunity, All Rights Reserved
+      </div>
     </div>
   );
 }

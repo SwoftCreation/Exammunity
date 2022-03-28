@@ -57,11 +57,10 @@
 }
 
 .footer {
-  padding-left: 68vw;
-  background-color: rgba(128, 128, 128, 0.329);
-  font-size: 0.8rem;
+  background-color: rgba(128, 128, 128, 0.247);
+  position: relative;
 }
-
-#footerButton {
-  float: left;
+.footerContent {
+  padding-left: 60vw;
+  font-size: 0.6rem;
 }
