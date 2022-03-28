@@ -49,7 +49,7 @@ function Dong() {
         </div>
         <br />
         <hr />
-        <div data-aos="fade-up" data-aos-delay="900">
+        <div data-aos="fade-up" data-aos-delay="300">
           <h4>
             <FontAwesomeIcon icon={faFaceKissWinkHeart} />
             &nbsp;About me!
