@@ -12,7 +12,7 @@ function Project() {
   });
 
   return (
-    <div>
+    <div introduceProject>
       <NavbarComponent />
       <br />
       <br />

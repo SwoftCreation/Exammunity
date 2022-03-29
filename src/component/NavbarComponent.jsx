@@ -99,8 +99,32 @@ export default function NavbarComponent() {
                     new
                   </Badge>
                 </DropdownItem>
-
                 <DropdownItem divider />
+                <DropdownItem href="/introduce/Soo">
+                  <Link to="/introduce/Soo">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    &nbsp;임수원&nbsp;
+                  </Link>
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    프론트엔드
+                  </span>
+                  <Button
+                    className="gitButton"
+                    children="git"
+                    outline
+                    sm="true"
+                    color="danger"
+                    style={{ float: "right" }}
+                    size="sm"
+                    href="https://github.com/SwoftCreation?tab=overview&from=2021-08-01&to=2021-08-31"
+                  />
+                </DropdownItem>
+
                 <DropdownItem>
                   <Link to="/introduce/Gyu">
                     <FontAwesomeIcon icon={faArrowRight} />
@@ -146,30 +170,6 @@ export default function NavbarComponent() {
                     style={{ float: "right" }}
                     href="https://github.com/imsiyong"
                     size="sm"
-                  />
-                </DropdownItem>
-                <DropdownItem href="/introduce/Soo">
-                  <Link to="/introduce/Soo">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    &nbsp;임수원&nbsp;
-                  </Link>
-                  <span
-                    style={{
-                      fontSize: "xx-small",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    프론트엔드
-                  </span>
-                  <Button
-                    className="gitButton"
-                    children="git"
-                    outline
-                    sm="true"
-                    color="danger"
-                    style={{ float: "right" }}
-                    size="sm"
-                    href="https://github.com/SwoftCreation?tab=overview&from=2021-08-01&to=2021-08-31"
                   />
                 </DropdownItem>
               </DropdownMenu>
