@@ -101,7 +101,11 @@ export default function NavbarComponent() {
                 </DropdownItem>
                 <DropdownItem divider />
 
-                <DropdownItem href="/introduce/Soo">
+                <DropdownItem
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
                   <Link to="/introduce/Soo">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;임수원&nbsp;
@@ -127,7 +131,11 @@ export default function NavbarComponent() {
                   />
                 </DropdownItem>
 
-                <DropdownItem>
+                <DropdownItem
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
                   <Link to="/introduce/Gyu">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;장규은&nbsp;
@@ -152,7 +160,11 @@ export default function NavbarComponent() {
                     size="sm"
                   />
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
                   <Link to="/introduce/Dong">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;김동화&nbsp;
