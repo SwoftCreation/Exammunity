@@ -55,6 +55,7 @@
 .introduceP p:nth-last-child(1) {
   text-decoration: solid underline;
   color: red;
+  font-size: 1rem;
 }
 
 .projectList {
