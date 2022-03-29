@@ -40,3 +40,7 @@
   display: block;
   margin: auto;
 }
+
+.doneList {
+  text-decoration: line-through;
+}

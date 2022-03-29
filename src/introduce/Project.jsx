@@ -12,11 +12,27 @@ function Project() {
   });
 
   return (
-    <div style={{ float: "center" }}>
+    <div>
       <NavbarComponent />
       <br />
       <br />
       <hr />
+      <h4 style={{ textAlign: "center", fontSize: "1.8rem" }}>
+        <strong>현재 이 프로젝트는 30% 완성되었습니다</strong>
+      </h4>
+      <ul
+        style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}
+      >
+        <div className="doneList">
+          <li>디자인 틀 설정 reactstrap</li>
+          <li>서버연결 netlify</li>
+          <li>라우팅 설정 react-router-dom</li>
+          <li>푸터 설정</li>
+          <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
+        </div>
+        <li>DB 연결 및 회원가입 구현 Firebase</li>
+        <li>ExamSquare 게시판 구현 Firebase Redux Recoil Zustand</li>
+      </ul>
 
       <figure data-aos="fade-up" data-aos-delay="300">
         <img
