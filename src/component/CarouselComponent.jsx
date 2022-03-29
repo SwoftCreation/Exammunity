@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/CarouselStyle.css";
-import { Navbar, UncontrolledCarousel } from "reactstrap";
+import { UncontrolledCarousel } from "reactstrap";
 
 export default function CarouselComponent() {
   /* 
@@ -14,9 +14,7 @@ export default function CarouselComponent() {
   */
 
   return (
-    <div className="CarouselContainer">
-      <Navbar></Navbar>
-
+    <>
       <UncontrolledCarousel
         className="carousel"
         items={[
@@ -38,6 +36,6 @@ export default function CarouselComponent() {
           },
         ]}
       />
-    </div>
+    </>
   );
 }

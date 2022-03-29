@@ -7,6 +7,9 @@
   align-content: center;
 } */
 
-.CarouselContainer UncontrolledCarousel {
-  background-size: cover;
+.carousel {
+  width: 80vw;
+  height: auto;
+  display: block;
+  margin: auto;
 }

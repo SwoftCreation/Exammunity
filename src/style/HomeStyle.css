@@ -1,0 +1,17 @@
+.Home {
+  position: relative;
+}
+
+.NavbarComponent {
+  position: relative;
+}
+
+.CarouselComponent {
+  position: relative;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.FrontArticleComponent {
+  position: relative;
+}
