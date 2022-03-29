@@ -49,6 +49,12 @@
   text-align: center;
 }
 
+.introduceP p:nth-last-child(1) {
+  font-size: 3rem;
+  text-decoration: solid underline;
+  color: red;
+}
+
 .projectList ul li {
   line-height: 3rem;
 }

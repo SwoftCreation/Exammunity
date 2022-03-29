@@ -107,7 +107,11 @@ function Project() {
           <p data-aos="zoom-in" data-aos-delay="900">
             지식의 선순환은 무엇인가요?
           </p>
-          <p data-aos="zoom-in" data-aos-delay="1000">
+          <p
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            style={{ fontsize: "5rem" }}
+          >
             Exammunity는 그 이슈를 다루기 위해 세상에 나왔습니다!
           </p>
         </span>
