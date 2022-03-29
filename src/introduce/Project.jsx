@@ -36,7 +36,10 @@ function Project() {
           <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
         </div>
         <li>DB 연결 및 회원가입 구현 Firebase</li>
-        <li>ExamSquare 게시판 구현 Firebase Redux Recoil Zustand</li>
+        <li>ExamSquare 게시판 구현 Firebase Redux</li>
+        <li>ExamMarket 마켓플레이스 구현</li>
+        <li>회원 포인트 구현 zustand</li>
+        <li>회원간 포인트 송금기능 구현</li>
       </ul>
 
       <figure data-aos="fade-down-right" data-aos-delay="300">
