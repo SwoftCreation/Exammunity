@@ -77,7 +77,7 @@ export default function FrontArticleComponent() {
           <CardBody className="Cardbody">
             <CardTitle tag="h5">평가원ST 기출30선</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              writer: 장규은
+              writer: 김동화
             </CardSubtitle>
             <CardText>__ 10000 COIN __</CardText>
             <Button
@@ -103,9 +103,9 @@ export default function FrontArticleComponent() {
             width="100%"
           />
           <CardBody className="Cardbody">
-            <CardTitle tag="h5">이것이 대장동이다</CardTitle>
+            <CardTitle tag="h5">교육청 모의고사 모아보기</CardTitle>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
-              writer: 이재명
+              writer: 임수원
             </CardSubtitle>
             <CardText>__ 3100 COIN __</CardText>
             <Button
