@@ -23,7 +23,7 @@ function Project() {
           style={{ textAlign: "center", fontSize: "1.8rem" }}
           data-aos="fade-down-right"
         >
-          <strong>현재 이 프로젝트는 30% 완성되었습니다</strong>
+          <strong>현재 이 프로젝트는 [ 30% ] 완성되었습니다</strong>
         </h4>
         <ul
           style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}

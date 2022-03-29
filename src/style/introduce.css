@@ -63,6 +63,7 @@
 
 .projectList ul li {
   line-height: 3rem;
+  list-style: none;
 }
 
 .introduceProject {

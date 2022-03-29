@@ -27,7 +27,7 @@ function Soo() {
           임수원
         </h1>
         <br />
-        <div data-aos="fade-up" data-aos-delay="600">
+        <div data-aos="fade-up" data-aos-delay="400">
           <h4>
             <FontAwesomeIcon icon={faPager} />
             &nbsp; Language
@@ -35,14 +35,14 @@ function Soo() {
             Javascript Python
           </h4>
           <br />
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="500">
             <FontAwesomeIcon icon={faDesktop} />
             &nbsp; Tech
             <br />
             React Redux.api
           </h4>
           <br />
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="600">
             <FontAwesomeIcon icon={faOtter} />
             &nbsp; Hobby
             <br />
@@ -51,7 +51,7 @@ function Soo() {
         </div>
         <br />
         <hr />
-        <div data-aos="fade-up" data-aos-delay="300">
+        <div data-aos="fade-up" data-aos-delay="700">
           <h4>
             <FontAwesomeIcon icon={faFaceKissWinkHeart} />
             &nbsp;About me!

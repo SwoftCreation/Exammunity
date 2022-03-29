@@ -28,20 +28,20 @@ function Gyu() {
           장규은
         </h1>
         <br />
-        <div data-aos="fade-up" data-aos-delay="600">
-          <h4>
+        <div>
+          <h4 data-aos="fade-up" data-aos-delay="400">
             <FontAwesomeIcon icon={faPager} />
             &nbsp; Language
             <br />C C++ Java
           </h4>
           <br />
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="500">
             <FontAwesomeIcon icon={faDesktop} />
             &nbsp; Tech
             <br />
           </h4>
           <br />
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="600">
             <FontAwesomeIcon icon={faOtter} />
             &nbsp; Hobby
             <br />
@@ -50,7 +50,7 @@ function Gyu() {
         </div>
         <br />
         <hr />
-        <div data-aos="fade-up" data-aos-delay="300">
+        <div data-aos="fade-up" data-aos-delay="700">
           <h4>
             <FontAwesomeIcon icon={faFaceKissWinkHeart} />
             &nbsp;About me!
