@@ -22,7 +22,11 @@ function Dong() {
       <hr />
       <br />
       <div className="personalIntroduce">
-        <h1 data-aos="fade-up" data-aos-delay="300">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="300"
+          style={{ textShadow: "5px 5px 5px #726e71ba" }}
+        >
           <br />
           김동화
         </h1>

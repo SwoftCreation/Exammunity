@@ -11,7 +11,7 @@ function Project() {
   });
 
   return (
-    <div introduceProject>
+    <div>
       <NavbarComponent />
       <br />
       <br />
