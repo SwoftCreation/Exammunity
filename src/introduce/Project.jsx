@@ -28,18 +28,28 @@ function Project() {
         data-aos="fade-down-left"
         data-aos-delay="300"
       >
-        <div className="doneList">
+        <div className="doneList" data-aos="flip-right" data-aos-delay="300">
           <li>디자인 틀 설정 reactstrap</li>
           <li>서버연결 netlify</li>
           <li>라우팅 설정 react-router-dom</li>
           <li>푸터 설정</li>
           <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
         </div>
-        <li>DB 연결 및 회원가입 구현 Firebase</li>
-        <li>ExamSquare 게시판 구현 Firebase Redux</li>
-        <li>ExamMarket 마켓플레이스 구현</li>
-        <li>회원 포인트 구현 zustand</li>
-        <li>회원간 포인트 송금기능 구현</li>
+        <li data-aos="zoom-in" data-aos-delay="300">
+          DB 연결 및 회원가입 구현 Firebase
+        </li>
+        <li data-aos="zoom-in" data-aos-delay="400">
+          ExamSquare 게시판 구현 Firebase Redux
+        </li>
+        <li data-aos="zoom-in" data-aos-delay="500">
+          ExamMarket 마켓플레이스 구현
+        </li>
+        <li data-aos="zoom-in" data-aos-delay="600">
+          회원 포인트 구현 zustand
+        </li>
+        <li data-aos="zoom-in" data-aos-delay="700">
+          회원간 포인트 송금기능 구현
+        </li>
       </ul>
 
       <figure data-aos="fade-down-right" data-aos-delay="300">
@@ -53,21 +63,51 @@ function Project() {
 
       <hr />
       <br />
-      <div className="Introduce" data-aos="fade-down-left" data-aos-delay="300">
-        <h1>
+      <div className="Introduce">
+        <h1
+          style={{ fontSize: "2rem" }}
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <strong>Exammunity</strong> 프로젝트 소개
         </h1>
         <br />
-        <h2>최초의 커스텀 시험지 마켓 플레이스</h2>
-        <h4>누구나 시험지를 사고 팔 수 있습니다</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo et
-          odit eius aliquid corporis! Nisi veniam, recusandae ea, rem et minus
-          delectus laborum, eos quod culpa modi dolorem quis eveniet sint nihil.
-          Earum doloribus magni delectus veniam, magnam blanditiis
-          exercitationem rerum tenetur suscipit laboriosam atque deleniti quasi
-          necessitatibus. Nesciunt!
-        </p>
+        <h2
+          style={{ fontSize: "1.5rem", marginBottom: "4rem" }}
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          최초의 커스텀 시험지 마켓 플레이스
+        </h2>
+        <span>
+          <p data-aos="zoom-in" data-aos-delay="300">
+            우리는 살면서 10년이 넘는 의무교육을 받습니다 (정확히는 12년입니다!)
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="400">
+            우리 숨쉬며 살아있는 시간의 10%가 넘는 시간을 교육 받습니다
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="500">
+            국가는 매년마다 의무교육을 새로이 하기 위해서 막대한 예산을 사용하죠
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="600">
+            하지만 수능이 끝나면 의무교육지식은 시간이 지나면서 우리 머릿속에서
+            점점 사라집니다.
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="700">
+            만약 의무교육으로 얻은 지식을 재사용할 수 있다면 얼마나 많은 돈을
+            아낄 수 있을까요?
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="800">
+            누구나 평등하게 받은 의무교육으로 고정수익을 만들 수 있다면 얼마나
+            좋을까요?
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="900">
+            지식의 선순환은 무엇인가요?
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="1000">
+            Exammunity는 그 이슈를 다루기 위해 세상에 나왔습니다!
+          </p>
+        </span>
       </div>
       <FooterComponent />
     </div>
