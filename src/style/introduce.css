@@ -53,10 +53,8 @@
 }
 
 .introduceP p:nth-last-child(1) {
-  font-size: 3rem;
   text-decoration: solid underline;
   color: red;
-  line-height: 5rem;
 }
 
 .projectList {

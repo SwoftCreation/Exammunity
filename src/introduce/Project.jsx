@@ -55,15 +55,6 @@ function Project() {
         </ul>
       </div>
 
-      <figure data-aos="fade-down-right" data-aos-delay="300">
-        <img
-          src={image1}
-          alt="image1"
-          data-aos="fade-up"
-          className="projectImage"
-        />
-      </figure>
-
       <hr />
       <br />
       <div className="Introduce">
