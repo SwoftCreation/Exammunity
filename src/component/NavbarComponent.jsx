@@ -100,19 +100,21 @@ export default function NavbarComponent() {
                   </Badge>
                 </DropdownItem>
                 <DropdownItem divider />
+
                 <DropdownItem href="/introduce/Soo">
                   <Link to="/introduce/Soo">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;임수원&nbsp;
+                    <span
+                      style={{
+                        fontSize: "xx-small",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      프론트엔드
+                    </span>
                   </Link>
-                  <span
-                    style={{
-                      fontSize: "xx-small",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    프론트엔드
-                  </span>
+
                   <Button
                     className="gitButton"
                     children="git"
@@ -129,15 +131,16 @@ export default function NavbarComponent() {
                   <Link to="/introduce/Gyu">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;장규은&nbsp;
+                    <span
+                      style={{
+                        fontSize: "xx-small",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      백엔드
+                    </span>
                   </Link>
-                  <span
-                    style={{
-                      fontSize: "xx-small",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    백엔드
-                  </span>
+
                   <Button
                     className="gitButton"
                     children="git"
@@ -153,15 +156,16 @@ export default function NavbarComponent() {
                   <Link to="/introduce/Dong">
                     <FontAwesomeIcon icon={faArrowRight} />
                     &nbsp;김동화&nbsp;
+                    <span
+                      style={{
+                        fontSize: "xx-small",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      백엔드
+                    </span>
                   </Link>
-                  <span
-                    style={{
-                      fontSize: "xx-small",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    백엔드
-                  </span>
+
                   <Button
                     className="gitButton"
                     children="git"
