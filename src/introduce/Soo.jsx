@@ -15,13 +15,13 @@ function Soo() {
     AOS.init({});
   });
   return (
-    <div>
+    <div className="Soo">
       <NavbarComponent />
       <br />
       <br />
       <hr />
       <br />
-      <div className="Introduce">
+      <div className="personalIntroduce">
         <h1 data-aos="fade-up" data-aos-delay="300">
           <br />
           임수원

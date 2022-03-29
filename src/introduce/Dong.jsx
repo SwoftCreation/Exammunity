@@ -15,13 +15,13 @@ function Dong() {
     AOS.init({});
   });
   return (
-    <div>
+    <div className="Dong">
       <NavbarComponent />
       <br />
       <br />
       <hr />
       <br />
-      <div className="Introduce">
+      <div className="personalIntroduce">
         <h1 data-aos="fade-up" data-aos-delay="300">
           <br />
           김동화

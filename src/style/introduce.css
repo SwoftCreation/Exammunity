@@ -1,6 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
-.Introduce {
+
+.Gyu {
+  height: 100vh;
+}
+
+/*
+  팀원 소개
+*/
+.personalIntroduce p {
+  font-size: 15px;
+  line-height: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.personalIntroduce h1 {
+  font-size: 2rem;
+  color: black;
+  font-style: italic;
+  font-family: "Sunflower", sans-serif;
+}
+
+.personalIntroduce h2 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: "Sunflower", sans-serif;
+}
+
+.personalIntroduce {
+  height: 100vh;
+  position: relative;
+}
+
+.projectExplain,
+.personalIntroduce {
   font-family: "Gugi", cursive;
   text-align: center;
   border-style: dashed;
@@ -10,63 +44,36 @@
   border-color: brown;
   margin-bottom: 20vh;
 }
-
-.Introduce p {
-  font-size: 15px;
-  line-height: 2rem;
-  text-align: left;
-  letter-spacing: 1px;
-}
-
-.Introduce h1 {
-  font-size: 2rem;
-  color: black;
-  font-style: italic;
+/*
+  /introduce/Project/ 안에 작업 목록
+*/
+.todoList {
   font-family: "Sunflower", sans-serif;
 }
 
-.Introduce h2 {
-  font-size: 1.5rem;
+.todoList ul li {
   line-height: 3rem;
-  font-family: "Sunflower", sans-serif;
-}
-
-.projectImage {
-  width: 90vw;
-  height: 50vh;
-  display: block;
-  margin: 5vh auto 5vh;
-}
-
-.calendar {
-  display: block;
-  margin: auto;
+  list-style: none;
 }
 
 .doneList {
   text-decoration: line-through;
 }
 
-.introduceP p {
+/*
+  /introduce/Project/ 안에 프로젝트 설명
+*/
+.projectExplain p {
   text-align: center;
   font-family: "Sunflower", sans-serif;
 }
 
-.introduceP p:nth-last-child(1) {
+.projectExplain p:nth-last-child(1) {
   text-decoration: solid underline;
   color: red;
   font-size: 1rem;
 }
 
-.projectList {
-  font-family: "Sunflower", sans-serif;
-}
-
-.projectList ul li {
-  line-height: 3rem;
-  list-style: none;
-}
-
-.introduceProject {
+.projectExplain {
   min-width: 400;
 }

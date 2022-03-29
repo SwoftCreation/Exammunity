@@ -17,7 +17,7 @@ function Project() {
       <br />
       <hr />
 
-      <div className="projectList">
+      <div className="todoList">
         <h4
           style={{ textAlign: "center", fontSize: "1.8rem" }}
           data-aos="fade-down-right"
@@ -56,7 +56,7 @@ function Project() {
 
       <hr />
       <br />
-      <div className="Introduce">
+      <div className="projectExplain">
         <h1
           style={{ fontSize: "2rem" }}
           data-aos="zoom-in"
@@ -72,7 +72,7 @@ function Project() {
         >
           최초의 커스텀 시험지 마켓 플레이스
         </h2>
-        <span className="introduceP">
+        <span>
           <p data-aos="zoom-in" data-aos-delay="300">
             우리는 살면서 10년이 넘는 의무교육을 받습니다 (정확히는 12년입니다!)
           </p>

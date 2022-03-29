@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import AOS from "aos";
 import NavbarComponent from "../component/NavbarComponent";
 import FooterComponent from "../component/FooterComponent";
-import "../style/ScheduleStyle.css";
+import "../style/CalendarStyle.css";
 import { ListGroup, ListGroupItem } from "reactstrap";
 function Schedule() {
   const [value, onChange] = useState(new Date());
