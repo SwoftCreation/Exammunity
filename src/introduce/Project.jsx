@@ -17,11 +17,16 @@ function Project() {
       <br />
       <br />
       <hr />
-      <h4 style={{ textAlign: "center", fontSize: "1.8rem" }}>
+      <h4
+        style={{ textAlign: "center", fontSize: "1.8rem" }}
+        data-aos="fade-down-right"
+      >
         <strong>현재 이 프로젝트는 30% 완성되었습니다</strong>
       </h4>
       <ul
         style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}
+        data-aos="fade-down-left"
+        data-aos-delay="300"
       >
         <div className="doneList">
           <li>디자인 틀 설정 reactstrap</li>
@@ -34,7 +39,7 @@ function Project() {
         <li>ExamSquare 게시판 구현 Firebase Redux Recoil Zustand</li>
       </ul>
 
-      <figure data-aos="fade-up" data-aos-delay="300">
+      <figure data-aos="fade-down-right" data-aos-delay="300">
         <img
           src={image1}
           alt="image1"
@@ -45,7 +50,7 @@ function Project() {
 
       <hr />
       <br />
-      <div className="Introduce" data-aos="fade-up" data-aos-delay="500">
+      <div className="Introduce" data-aos="fade-down-left" data-aos-delay="300">
         <h1>
           <strong>Exammunity</strong> 프로젝트 소개
         </h1>
