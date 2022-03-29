@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
 .Introduce {
   font-family: "Gugi", cursive;
   text-align: center;
@@ -21,11 +22,13 @@
   font-size: 2rem;
   color: black;
   font-style: italic;
+  font-family: "Sunflower", sans-serif;
 }
 
-.Introduce h4 {
+.Introduce h2 {
   font-size: 1.5rem;
   line-height: 3rem;
+  font-family: "Sunflower", sans-serif;
 }
 
 .projectImage {
@@ -46,6 +49,7 @@
 
 .introduceP p {
   text-align: center;
+  font-family: "Sunflower", sans-serif;
 }
 
 .introduceP p:nth-last-child(1) {
@@ -53,6 +57,10 @@
   text-decoration: solid underline;
   color: red;
   line-height: 5rem;
+}
+
+.projectList {
+  font-family: "Sunflower", sans-serif;
 }
 
 .projectList ul li {
