@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
 
-.Gyu {
-  height: 100vh;
-}
-
 /*
   팀원 소개
 */
@@ -26,11 +22,6 @@
   font-size: 1.5rem;
   line-height: 3rem;
   font-family: "Sunflower", sans-serif;
-}
-
-.personalIntroduce {
-  height: 100vh;
-  position: relative;
 }
 
 .projectExplain,
