@@ -17,40 +17,43 @@ function Project() {
       <br />
       <br />
       <hr />
-      <h4
-        style={{ textAlign: "center", fontSize: "1.8rem" }}
-        data-aos="fade-down-right"
-      >
-        <strong>현재 이 프로젝트는 30% 완성되었습니다</strong>
-      </h4>
-      <ul
-        style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}
-        data-aos="fade-down-left"
-        data-aos-delay="300"
-      >
-        <div className="doneList" data-aos="flip-right" data-aos-delay="300">
-          <li>디자인 틀 설정 reactstrap</li>
-          <li>서버연결 netlify</li>
-          <li>라우팅 설정 react-router-dom</li>
-          <li>푸터 설정</li>
-          <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
-        </div>
-        <li data-aos="zoom-in" data-aos-delay="300">
-          DB 연결 및 회원가입 구현 Firebase
-        </li>
-        <li data-aos="zoom-in" data-aos-delay="400">
-          ExamSquare 게시판 구현 Firebase Redux
-        </li>
-        <li data-aos="zoom-in" data-aos-delay="500">
-          ExamMarket 마켓플레이스 구현
-        </li>
-        <li data-aos="zoom-in" data-aos-delay="600">
-          회원 포인트 구현 zustand
-        </li>
-        <li data-aos="zoom-in" data-aos-delay="700">
-          회원간 포인트 송금기능 구현
-        </li>
-      </ul>
+
+      <div className="projectList">
+        <h4
+          style={{ textAlign: "center", fontSize: "1.8rem" }}
+          data-aos="fade-down-right"
+        >
+          <strong>현재 이 프로젝트는 30% 완성되었습니다</strong>
+        </h4>
+        <ul
+          style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}
+          data-aos="fade-down-left"
+          data-aos-delay="300"
+        >
+          <div className="doneList" data-aos="flip-right" data-aos-delay="300">
+            <li>디자인 틀 설정 reactstrap</li>
+            <li>서버연결 netlify</li>
+            <li>라우팅 설정 react-router-dom</li>
+            <li>푸터 설정</li>
+            <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
+          </div>
+          <li data-aos="zoom-in" data-aos-delay="300">
+            DB 연결 및 회원가입 구현 Firebase
+          </li>
+          <li data-aos="zoom-in" data-aos-delay="400">
+            ExamSquare 게시판 구현 Firebase Redux
+          </li>
+          <li data-aos="zoom-in" data-aos-delay="500">
+            ExamMarket 마켓플레이스 구현
+          </li>
+          <li data-aos="zoom-in" data-aos-delay="600">
+            회원 포인트 구현 zustand
+          </li>
+          <li data-aos="zoom-in" data-aos-delay="700">
+            회원간 포인트 송금기능 구현
+          </li>
+        </ul>
+      </div>
 
       <figure data-aos="fade-down-right" data-aos-delay="300">
         <img
@@ -67,7 +70,7 @@ function Project() {
         <h1
           style={{ fontSize: "2rem" }}
           data-aos="zoom-in"
-          data-aos-delay="200"
+          data-aos-delay="300"
         >
           <strong>Exammunity</strong> 프로젝트 소개
         </h1>
@@ -79,7 +82,7 @@ function Project() {
         >
           최초의 커스텀 시험지 마켓 플레이스
         </h2>
-        <span>
+        <span className="introduceP">
           <p data-aos="zoom-in" data-aos-delay="300">
             우리는 살면서 10년이 넘는 의무교육을 받습니다 (정확히는 12년입니다!)
           </p>

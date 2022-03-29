@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
-
 .Introduce {
   font-family: "Gugi", cursive;
   text-align: center;
@@ -43,4 +42,13 @@
 
 .doneList {
   text-decoration: line-through;
+}
+
+.introduceP p {
+  line-height: 10rem;
+  text-align: center;
+}
+
+.projectList ul li {
+  line-height: 3rem;
 }
