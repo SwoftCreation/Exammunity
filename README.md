@@ -23,7 +23,7 @@ sweetAlert2
 flexbox 
 
 스크롤 애니메이션
-직접구현예정
+AOS.api
 
 로그인, 커뮤니티DB
 Firebase
