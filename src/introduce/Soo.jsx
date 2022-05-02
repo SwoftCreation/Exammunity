@@ -43,7 +43,13 @@ function Soo() {
             <FontAwesomeIcon icon={faDesktop} />
             &nbsp; Tech
             <br />
-            React Redux.api
+            HTML/CSS
+            <br />
+            Javascript ( - , ES6)
+            <br />
+            React
+            <br />
+            Oracle
           </h4>
           <br />
           <h4 data-aos="fade-up" data-aos-delay="600">
