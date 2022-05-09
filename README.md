@@ -16,11 +16,8 @@ react-router-dom
 React-strap
 sweetalert2
 
-세부레이아웃조정
-flexbox
-
 스크롤 애니메이션
 AOS.api
 
-로그인, 커뮤니티DB
-Oracle cloud
+데이터베이스
+amazonAWS
