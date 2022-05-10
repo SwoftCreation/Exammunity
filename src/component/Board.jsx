@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Pagination,
   PaginationItem,
@@ -7,12 +7,17 @@ import {
   ListGroupItem,
 } from "reactstrap";
 import "../style/Board.css";
+import AOS from "aos";
 
 const Board = () => {
+  useEffect(() => {
+    AOS.init({});
+  });
   return (
     <div>
-      <Articles />
-      <PageList />
+      <Articles data-aos="flip-right" data-aos-delay="400" />
+      <br />
+      <PageList data-aos="flip-right" data-aos-delay="500" />
     </div>
   );
 };
