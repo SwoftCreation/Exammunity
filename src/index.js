@@ -5,8 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
-//const store = legacy_createStore(rootReducer, composeWithDevTools());
-
 ReactDOM.render(
   <BrowserRouter>
     <App />
