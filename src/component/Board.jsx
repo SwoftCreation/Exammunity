@@ -15,9 +15,9 @@ const Board = () => {
   });
   return (
     <div>
-      <Articles data-aos="flip-right" data-aos-delay="400" />
+      <Articles />
       <br />
-      <PageList data-aos="flip-right" data-aos-delay="500" />
+      <PageList />
     </div>
   );
 };
@@ -26,7 +26,11 @@ export default Board;
 
 const Articles = () => (
   <div>
-    <ListGroup>
+    <ListGroup
+      data-aos="flip-right"
+      data-aos-delay="200"
+      data-aos-duration="1500"
+    >
       <ListGroupItem action active href="#" tag="a">
         Cras justo odio
       </ListGroupItem>
@@ -48,7 +52,11 @@ const Articles = () => (
 
 const PageList = () => (
   <div className="PageList">
-    <Pagination>
+    <Pagination
+      data-aos="flip-right"
+      data-aos-delay="200"
+      data-aos-duration="1500"
+    >
       <PaginationItem>
         <PaginationLink first href="#" />
       </PaginationItem>
