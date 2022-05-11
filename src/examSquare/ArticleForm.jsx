@@ -2,7 +2,12 @@ import React from "react";
 import { Box, TextField } from "@mui/material";
 import "./examSquare.css";
 import { Button } from "reactstrap";
+import { useEffect } from "react";
+import AOS from "aos";
 const ArticleForm = () => {
+  useEffect(() => {
+    AOS.init({});
+  });
   return (
     <div className="ArticleFormDiv">
       <Box
@@ -13,6 +18,9 @@ const ArticleForm = () => {
             height: "50vh",
           },
         }}
+        data-aos="flip-right"
+        data-aos-delay="200"
+        data-aos-duration="1500"
       >
         <TextField
           id="outlined-multiline-static"
