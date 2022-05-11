@@ -27,9 +27,16 @@ function ArticleForm() {
     AOS.init({});
   });
   return (
-    <div data-aos="flip-right" data-aos-delay="200" data-aos-duration="1500">
+    <div
+      data-aos="flip-right"
+      data-aos-delay="200"
+      data-aos-duration="1500"
+      id="articleTextarea"
+    >
       <div class="form-group" style={{ margin: "5%" }}>
-        <label for="exampleFormControlTextarea1">게시글 작성</label>
+        <label for="exampleFormControlTextarea1" style={{ fontSize: "1.4rem" }}>
+          게시글 작성
+        </label>
         <textarea
           class="form-control"
           id="exampleFormControlTextarea1"
