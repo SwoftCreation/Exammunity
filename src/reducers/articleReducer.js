@@ -4,28 +4,28 @@ const UPDATE = "article/UPDATE";
 
 let id = 0;
 
-const createArticle = ({ title, text, author }) => {
+export const createArticle = ({ title, content, author }) => {
   return {
     type: CREATE,
     article: [
       {
-        id: id++,
+        id: id + 1,
         title: title,
-        contents: text,
+        contents: content,
         author: author,
       },
     ],
   };
 };
 
-const deleteArticle = (id) => {
+export const deleteArticle = (id) => {
   return {
     type: DELETE,
     id,
   };
 };
 
-const updateArticle = (id) => {
+export const updateArticle = (id) => {
   return {
     type: UPDATE,
     id,
@@ -37,9 +37,9 @@ const initialState = {
   articles: [
     {
       id: 0,
-      title: "sample1",
-      contents: "sample contents1",
-      author: "johnson",
+      title: "sample title",
+      contents: "sample contents",
+      author: "administrator",
     },
   ],
 };

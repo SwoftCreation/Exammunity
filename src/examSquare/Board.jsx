@@ -5,53 +5,68 @@ import {
   PaginationLink,
   ListGroup,
   ListGroupItem,
+  Button,
 } from "reactstrap";
-import { Link } from "react-router-dom";
-
+import "./examSquare.css";
+import { useSelector } from "react-redux";
 import AOS from "aos";
+import { useHistory } from "react-router-dom";
 
 const Board = () => {
   useEffect(() => {
     AOS.init({});
   });
+
+  const history = useHistory();
   return (
     <div>
       <Articles />
       <br />
       <PageList />
+      <Button
+        color="primary"
+        style={{ display: "block", margin: "auto" }}
+        onClick={() => {
+          history.push("/ExamSquare/Article");
+        }}
+      >
+        글 작성
+      </Button>
     </div>
   );
 };
 
 export default Board;
 
-const Articles = () => (
-  <div>
-    <ListGroup
-      data-aos="flip-right"
-      data-aos-delay="200"
-      data-aos-duration="1500"
-    >
-      <Link to="/ExamSquare/Article">
-        <ListGroupItem action active href="#" tag="a">
-          글1 => article로 연결
-        </ListGroupItem>
-      </Link>
-      <ListGroupItem action href="#" tag="a">
-        글2
-      </ListGroupItem>
-      <ListGroupItem action href="#" tag="a">
-        글3
-      </ListGroupItem>
-      <ListGroupItem action href="#" tag="a">
-        글4
-      </ListGroupItem>
-      <ListGroupItem action disabled href="#" tag="a">
-        글5
-      </ListGroupItem>
-    </ListGroup>
-  </div>
-);
+function Articles() {
+  const articles = useSelector((state) => state.articleReducer.articles);
+  const articleNum = useSelector((state) => state.articleReducer.articleNum);
+  return (
+    <div id="articleTextarea">
+      <ListGroup
+        data-aos="flip-right"
+        data-aos-delay="200"
+        data-aos-duration="1500"
+      >
+        {articleNum !== 0 ? (
+          articles.map((article) => {
+            return (
+              <div>
+                <ListGroupItem action href="#" tag="a">
+                  {article.title}
+                </ListGroupItem>
+              </div>
+            );
+          })
+        ) : (
+          <div>
+            <p>텅! 비었습니다 게시물을 등록해주세요</p>
+          </div>
+        )}
+      </ListGroup>
+    </div>
+  );
+}
 
 const PageList = () => (
   <div className="PageList">
