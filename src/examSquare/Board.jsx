@@ -6,7 +6,8 @@ import {
   ListGroup,
   ListGroupItem,
 } from "reactstrap";
-import "../style/Board.css";
+import { Link } from "react-router-dom";
+
 import AOS from "aos";
 
 const Board = () => {
@@ -31,20 +32,22 @@ const Articles = () => (
       data-aos-delay="200"
       data-aos-duration="1500"
     >
-      <ListGroupItem action active href="#" tag="a">
-        Cras justo odio
+      <Link to="/ExamSquare/Article">
+        <ListGroupItem action active href="#" tag="a">
+          글1 => article로 연결
+        </ListGroupItem>
+      </Link>
+      <ListGroupItem action href="#" tag="a">
+        글2
       </ListGroupItem>
       <ListGroupItem action href="#" tag="a">
-        Dapibus ac facilisis in
+        글3
       </ListGroupItem>
       <ListGroupItem action href="#" tag="a">
-        Morbi leo risus
-      </ListGroupItem>
-      <ListGroupItem action href="#" tag="a">
-        Porta ac consectetur ac
+        글4
       </ListGroupItem>
       <ListGroupItem action disabled href="#" tag="a">
-        Vestibulum at eros
+        글5
       </ListGroupItem>
     </ListGroup>
   </div>

@@ -18,21 +18,23 @@ const createArticle = ({ title, text, author }) => {
   };
 };
 
-const deleteArticle = () => {
+const deleteArticle = (id) => {
   return {
     type: DELETE,
+    id,
   };
 };
 
-const updateArticle = () => {
+const updateArticle = (id) => {
   return {
     type: UPDATE,
+    id,
   };
 };
 
 const initialState = {
   articleNum: 0,
-  article: [
+  articles: [
     {
       id: 0,
       title: "sample1",
@@ -47,7 +49,7 @@ export default function articleReducer(state = initialState, action) {
     case CREATE:
       return {
         ...state,
-        article: state.article.concat(action.article),
+        articles: state.articles.concat(action.article),
         articleNum: state.articleNum + 1,
       };
     case UPDATE:
@@ -56,7 +58,10 @@ export default function articleReducer(state = initialState, action) {
       };
     case DELETE:
       return {
-        state,
+        ...state,
+        articles: state.article.filter((article) => {
+          return article.id !== action.id;
+        }),
       };
     default:
       return state;

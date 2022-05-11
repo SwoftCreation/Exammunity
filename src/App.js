@@ -10,7 +10,8 @@ import Schedule from "./introduce/Schedule";
 import Project from "./introduce/Project";
 import Home from "./component/Home";
 import ExamMarket from "./component/ExamMarket";
-import ExamSquare from "./component/ExamSquare";
+import ExamSquare from "./examSquare/ExamSquare";
+import Article from "./examSquare/Article";
 
 /*
   App.js
@@ -29,8 +30,8 @@ function App() {
       <Route path="/introduce/Team" component={Project} />
 
       <Route path="/ExamMarket" component={ExamMarket} />
-      <Route path="/ExamSquare" component={ExamSquare} />
-
+      <Route path="/ExamSquare" component={ExamSquare} exact={true} />
+      <Route path="/ExamSquare/Article" component={Article} />
     </div>
   );
 }

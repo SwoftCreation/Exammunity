@@ -16,6 +16,7 @@ function Project() {
       <br />
       <br />
       <hr />
+      <br />
 
       <div className="todoList">
         <h4
