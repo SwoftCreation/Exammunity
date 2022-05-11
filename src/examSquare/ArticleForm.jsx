@@ -16,7 +16,7 @@ export default function ArticleForm() {
     Swal.fire({
       title: "게시글을 등록합니다",
       showDenyButton: true,
-      showCancelButton: true,
+      showCancelButton: false,
       confirmButtonText: "네",
       denyButtonText: `아니요`,
     }).then((result) => {
