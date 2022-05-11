@@ -23,7 +23,11 @@ function Project() {
           style={{ textAlign: "center", fontSize: "1.8rem" }}
           data-aos="fade-down-right"
         >
-          <strong>현재 이 프로젝트는 [ 30% ] 완성되었습니다</strong>
+          <strong>현재 이 프로젝트는 [ 45% ] 완성되었습니다</strong>
+          <br />
+          <a href="https://www.notion.so/EXAMMUNITY-4996cf4ef2db4aca8efb86448e9f9510">
+            [LINK] notion page about our project
+          </a>
         </h4>
         <ul
           style={{ width: "800px", margin: "2vh auto 2vh", fontSize: "1.4rem" }}
@@ -31,26 +35,32 @@ function Project() {
           data-aos-delay="300"
         >
           <div className="doneList" data-aos="flip-right" data-aos-delay="300">
-            <li>디자인 틀 설정 reactstrap</li>
+            <li>디자인 틀 설정 bootstrap, reactstrap</li>
             <li>서버연결 netlify</li>
             <li>라우팅 설정 react-router-dom</li>
             <li>푸터 설정</li>
             <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
+            <li>ExamSquare 리덕스 작업</li>
+            <li>데이터베이스 스키마 작성 및 구축 완료 Amazon AWS</li>
           </div>
           <li data-aos="zoom-in" data-aos-delay="300">
-            DB 연결 및 회원가입 구현 Firebase
+            ExamSquare 게시판 구현 완료
           </li>
           <li data-aos="zoom-in" data-aos-delay="400">
-            ExamSquare 게시판 구현 Firebase Redux
+            DB 연결 및 회원가입 구현
           </li>
+
           <li data-aos="zoom-in" data-aos-delay="500">
             ExamMarket 마켓플레이스 구현
           </li>
           <li data-aos="zoom-in" data-aos-delay="600">
-            회원 포인트 구현 zustand
+            회원 포인트 구현 Redux
           </li>
           <li data-aos="zoom-in" data-aos-delay="700">
             회원간 포인트 송금기능 구현
+          </li>
+          <li data-aos="zoom-in" data-aos-delay="800">
+            디자인 최종 수정
           </li>
         </ul>
       </div>
