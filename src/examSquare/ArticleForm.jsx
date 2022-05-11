@@ -11,6 +11,7 @@ export default function ArticleForm() {
   useEffect(() => {
     AOS.init({});
   });
+  const history = useHistory();
   const okayBtnClicked = () => {
     Swal.fire({
       title: "게시글을 등록합니다",
@@ -25,7 +26,6 @@ export default function ArticleForm() {
         Swal.fire("게시글이 저장되었습니다", "", "success");
       } else if (result.isDenied) {
         Swal.fire("취소되었습니다", "", "info");
-        history.push("/ExamSquare");
       }
     });
   };
@@ -34,7 +34,7 @@ export default function ArticleForm() {
   const [content, setContent] = useState("");
 
   const dispatch = useDispatch();
-  const history = useHistory();
+
   const onSave = () => {
     const _inputData = {
       id: 0,
@@ -89,7 +89,14 @@ export default function ArticleForm() {
       >
         등록하기
       </Button>
-      <Button color="danger">취소</Button>
+      <Button
+        color="danger"
+        onClick={() => {
+          history.push("/ExamSquare");
+        }}
+      >
+        취소
+      </Button>
     </div>
   );
 }
