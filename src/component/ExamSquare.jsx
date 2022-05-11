@@ -7,7 +7,9 @@ import Board from "./Board";
 export default function ExamSquare() {
   return (
     <div>
+      
       <NavbarComponent />
+      <p>exam square</p>
       <Board />
       <FooterComponent />
     </div>
