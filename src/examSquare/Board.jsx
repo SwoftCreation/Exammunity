@@ -60,7 +60,7 @@ function Articles() {
           })
         ) : (
           <div>
-            <p>텅! 비었습니다 게시물을 등록해주세요</p>
+            <p>텅! 비었습니다</p>
           </div>
         )}
       </ListGroup>

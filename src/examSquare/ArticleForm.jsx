@@ -3,9 +3,11 @@ import "./examSquare.css";
 import { Button } from "reactstrap";
 import AOS from "aos";
 import Swal from "sweetalert2";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { createArticle } from "../reducers/articleReducer";
 import { useHistory } from "react-router-dom";
+
+let id = 1;
 
 export default function ArticleForm() {
   useEffect(() => {
@@ -37,7 +39,7 @@ export default function ArticleForm() {
 
   const onSave = () => {
     const _inputData = {
-      id: 0,
+      id: id,
       title: title,
       content: content,
       author: "user",
@@ -45,6 +47,7 @@ export default function ArticleForm() {
     dispatch(createArticle(_inputData));
     setTitle("");
     setContent("");
+    id++;
     history.push("/ExamSquare");
   };
 
