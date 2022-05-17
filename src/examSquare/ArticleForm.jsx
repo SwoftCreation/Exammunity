@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { createArticle } from "../reducers/articleReducer";
 import { useHistory } from "react-router-dom";
+import FooterComponent from "../component/FooterComponent";
 
 let id = 1;
 
@@ -100,6 +101,10 @@ export default function ArticleForm() {
       >
         취소
       </Button>
+      <br />
+      <br />
+      <br />
+      <FooterComponent />
     </div>
   );
 }

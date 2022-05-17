@@ -12,6 +12,7 @@ import stateChanged from "./backEnd/stateChanged";
 
 const store = legacy_createStore(rootReducer, composeWithDevTools());
 store.subscribe(stateChanged);
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

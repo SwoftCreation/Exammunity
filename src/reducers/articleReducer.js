@@ -2,13 +2,10 @@ const CREATE = "article/CREATE";
 const DELETE = "article/DELETE";
 const UPDATE = "article/UPDATE";
 
-let id = 0;
-
 export const createArticle = ({ title, content, author }) => {
   return {
     type: CREATE,
     article: {
-      id: id + 1,
       title: title,
       contents: content,
       author: author,
@@ -32,15 +29,7 @@ export const updateArticle = (id) => {
 
 const initialState = {
   articleNum: 0,
-  articles: [
-    // //예시데이터
-    // {
-    //   id: 0,
-    //   title: "sample title",
-    //   contents: "sample contents",
-    //   author: "administrator",
-    // },
-  ],
+  articles: [],
 };
 
 export default function articleReducer(state = initialState, action) {
@@ -49,7 +38,13 @@ export default function articleReducer(state = initialState, action) {
       return {
         ...state,
 
-        articles: [...state.articles, action.article],
+        //articles: [...state.articles, action.article,],
+        // FIXME: 위의 주석의 방식대로 ID를 추가할 수 있는 방법은?
+
+        articles: state.articles.concat({
+          ...action.article,
+          id: state.articleNum + 1,
+        }),
         articleNum: state.articleNum + 1,
       };
     case UPDATE:

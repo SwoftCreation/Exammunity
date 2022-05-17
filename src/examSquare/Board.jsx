@@ -53,7 +53,7 @@ function Articles() {
             return (
               <div>
                 <ListGroupItem action href="#" tag="a">
-                  {article.title}
+                  {article.id}번째 글 - {article.title}
                 </ListGroupItem>
               </div>
             );
