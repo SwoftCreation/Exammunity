@@ -1,24 +1,9 @@
-const getDate = () => {
-  let date = new Date();
-  let [year, month, day, hour, min, sec] = [
-    date.getFullYear(),
-    date.getMonth(),
-    date.getDay(),
-    date.getHours(),
-    date.getMinutes(),
-    date.getSeconds,
-  ];
-  let dateString =
-    year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
-  return dateString;
-};
-
 const CREATE = "user/CREATE";
 const DELETE = "user/DELETE";
 
 let userNum = 0;
 
-const userCreate = ({ name, passWd }) => {
+export const userCreate = ({ name, passWd }) => {
   return {
     userInfo: {
       userName: name,
@@ -63,3 +48,18 @@ const userReducer = (state = initialState, action) => {
 };
 
 export default userReducer;
+
+const getDate = () => {
+  let date = new Date();
+  let [year, month, day, hour, min, sec] = [
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDay(),
+    date.getHours(),
+    date.getMinutes(),
+    date.getSeconds(),
+  ];
+  let dateString =
+    year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
+  return dateString;
+};
