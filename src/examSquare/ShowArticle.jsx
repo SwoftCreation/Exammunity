@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavbarComponent from "../component/NavbarComponent";
 import FooterComponent from "../component/FooterComponent";
 import {
@@ -10,15 +10,18 @@ import {
   Button,
 } from "reactstrap";
 import { useLocation, useHistory } from "react-router-dom";
-
+import AOS from "aos";
 function ShowArticle() {
+  useEffect(() => {
+    AOS.init({});
+  });
+
   const location = useLocation();
   const article = location.state.Article;
   console.log("article is ", article);
   return (
     <div>
       <NavbarComponent />
-
       <ArticleInfo article={article} />
       <FooterComponent />
     </div>
@@ -28,7 +31,7 @@ function ShowArticle() {
 function ArticleInfo(props) {
   const history = useHistory();
   return (
-    <div>
+    <div data-aos="flip-right" data-aos-delay="200" data-aos-duration="1500">
       <Card>
         <CardBody>
           <CardTitle style={{ fontSize: "2rem" }}>
