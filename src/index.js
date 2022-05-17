@@ -8,8 +8,10 @@ import rootReducer from "./reducers/rootReducer";
 import { legacy_createStore } from "redux";
 import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
+import stateChanged from "./backEnd/stateChanged";
 
 const store = legacy_createStore(rootReducer, composeWithDevTools());
+store.subscribe(stateChanged);
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

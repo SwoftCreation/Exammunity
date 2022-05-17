@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
-import { loginBtnClicked } from "../memberManage/loginButton";
+import { loginBtnClicked } from "../login/loginButton";
 import { Link } from "react-router-dom";
 
 import {
