@@ -12,7 +12,7 @@ import Home from "./component/Home";
 import ExamMarket from "./component/ExamMarket";
 import ExamSquare from "./examSquare/ExamSquare";
 import Article from "./examSquare/Article";
-
+import ShowArticle from "./examSquare/ShowArticle";
 /*
   App.js
   라우트 리스트 
@@ -32,6 +32,7 @@ function App() {
       <Route path="/ExamMarket" component={ExamMarket} />
       <Route path="/ExamSquare" component={ExamSquare} exact={true} />
       <Route path="/ExamSquare/Article" component={Article} />
+      <Route path="/ExamSquare/ShowArticle" component={ShowArticle} />
     </div>
   );
 }

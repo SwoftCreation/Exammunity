@@ -41,6 +41,7 @@ export default Board;
 function Articles() {
   const articles = useSelector((state) => state.articleReducer.articles);
   const articleNum = useSelector((state) => state.articleReducer.articleNum);
+  const history = useHistory();
   return (
     <div id="articleTextarea">
       <ListGroup
@@ -51,8 +52,15 @@ function Articles() {
         {articleNum !== 0 ? (
           articles.map((article) => {
             return (
-              <div>
-                <ListGroupItem action href="#" tag="a">
+              <div
+                onClick={() => {
+                  history.push({
+                    pathname: "/ExamSquare/ShowArticle",
+                    state: { Article: article },
+                  });
+                }}
+              >
+                <ListGroupItem>
                   {article.id}번째 글 - {article.title}
                 </ListGroupItem>
               </div>
