@@ -23,7 +23,7 @@ function Project() {
           style={{ textAlign: "center", fontSize: "1.8rem" }}
           data-aos="fade-down-right"
         >
-          <strong>현재 이 프로젝트는 [ 45% ] 완성되었습니다</strong>
+          <strong>현재 이 프로젝트는 [ 55% ] 완성되었습니다</strong>
           <br />
           <a href="https://www.notion.so/EXAMMUNITY-4996cf4ef2db4aca8efb86448e9f9510">
             [LINK] notion page about our project
@@ -42,10 +42,9 @@ function Project() {
             <li>Team 소개 페이지 작업(scroll animation) AOS.api</li>
             <li>ExamSquare 리덕스 작업</li>
             <li>데이터베이스 스키마 작성 및 구축 완료 Amazon AWS</li>
+            <li>ExamSquare 게시판 구현 완료</li>
           </div>
-          <li data-aos="zoom-in" data-aos-delay="300">
-            ExamSquare 게시판 구현 완료
-          </li>
+
           <li data-aos="zoom-in" data-aos-delay="400">
             DB 연결 및 회원가입 구현
           </li>
