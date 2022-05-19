@@ -49,7 +49,7 @@ export default function ArticleForm() {
     setTitle("");
     setContent("");
     id++;
-    history.push("/ExamSquare");
+    history.push("/ExamSquare/ArticleList");
   };
 
   const handleTitle = (e) => {

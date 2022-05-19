@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import AOS from "aos";
-import NavbarComponent from "../component/NavbarComponent";
 import FooterComponent from "../component/FooterComponent";
 import "../style/CalendarStyle.css";
 import { ListGroup, ListGroupItem } from "reactstrap";

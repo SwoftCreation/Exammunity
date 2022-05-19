@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
 import { loginBtnClicked } from "../login/loginButton";
-import { Link } from "react-router-dom";
 
 import {
   faArrowRightToBracket,
@@ -29,13 +28,15 @@ import {
   NavbarText,
 } from "reactstrap";
 
+import { useHistory } from "react-router-dom";
+
 /*
   NavbarComponent : 상단 네비게이션 바
  */
 
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const history = useHistory();
   return (
     <div>
       <Navbar
@@ -57,20 +58,30 @@ export default function NavbarComponent() {
         />
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
-            <Link to="/ExamMarket">
-              <NavItem id="navHover" style={{ margin: "10px" }}>
-                <NavLink>
-                  ExamMarket <FontAwesomeIcon icon={faCartPlus} />
-                </NavLink>
-              </NavItem>
-            </Link>
-            <Link to="/ExamSquare">
-              <NavItem id="navHover" style={{ margin: "10px" }}>
-                <NavLink>
-                  ExamSquare <FontAwesomeIcon icon={faTeeth} />
-                </NavLink>
-              </NavItem>
-            </Link>
+            <NavItem
+              id="navHover"
+              style={{ margin: "10px" }}
+              onClick={() => {
+                history.push("/ExamMarket");
+              }}
+            >
+              <NavLink>
+                ExamMarket <FontAwesomeIcon icon={faCartPlus} />
+              </NavLink>
+            </NavItem>
+
+            <NavItem
+              id="navHover"
+              style={{ margin: "10px" }}
+              onClick={() => {
+                history.push("/ExamSquare/ArticleList");
+              }}
+            >
+              <NavLink>
+                ExamSquare <FontAwesomeIcon icon={faTeeth} />
+              </NavLink>
+            </NavItem>
+
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle
                 caret
@@ -81,17 +92,24 @@ export default function NavbarComponent() {
                 Team소개 <FontAwesomeIcon icon={faUserNinja} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
-                <Link to="/introduce/Team">
-                  <DropdownItem>About Project</DropdownItem>
-                </Link>
-                <Link to="/introduce/Schedule">
-                  <DropdownItem>
-                    Project Schedule &nbsp;
-                    <Badge pill color="primary">
-                      new
-                    </Badge>
-                  </DropdownItem>
-                </Link>
+                <DropdownItem
+                  onClick={() => {
+                    history.push("/introduce/Team");
+                  }}
+                >
+                  About Project
+                </DropdownItem>
+
+                <DropdownItem
+                  onClick={() => {
+                    history.push("/introduce/Schedule");
+                  }}
+                >
+                  Project Schedule &nbsp;
+                  <Badge pill color="primary">
+                    new
+                  </Badge>
+                </DropdownItem>
 
                 <DropdownItem href="https://github.com/SwoftCreation/react-app1">
                   Project Git &nbsp;
@@ -104,21 +122,19 @@ export default function NavbarComponent() {
                 <DropdownItem
                   onClick={(e) => {
                     e.preventDefault();
+                    history.push("/introduce/Soo");
                   }}
                 >
-                  <Link to="/introduce/Soo">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    &nbsp;임수원&nbsp;
-                    <span
-                      style={{
-                        fontSize: "xx-small",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      프론트엔드
-                    </span>
-                  </Link>
-
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;임수원&nbsp;
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    프론트엔드
+                  </span>
                   <Button
                     className="gitButton"
                     children="git"
@@ -134,21 +150,19 @@ export default function NavbarComponent() {
                 <DropdownItem
                   onClick={(e) => {
                     e.preventDefault();
+                    history.push("/introduce/Gyu");
                   }}
                 >
-                  <Link to="/introduce/Gyu">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    &nbsp;장규은&nbsp;
-                    <span
-                      style={{
-                        fontSize: "xx-small",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      백엔드
-                    </span>
-                  </Link>
-
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;장규은&nbsp;
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    백엔드
+                  </span>
                   <Button
                     className="gitButton"
                     children="git"
@@ -163,21 +177,19 @@ export default function NavbarComponent() {
                 <DropdownItem
                   onClick={(e) => {
                     e.preventDefault();
+                    history.push("/introduce/Dong");
                   }}
                 >
-                  <Link to="/introduce/Dong">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    &nbsp;김동화&nbsp;
-                    <span
-                      style={{
-                        fontSize: "xx-small",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      백엔드
-                    </span>
-                  </Link>
-
+                  <FontAwesomeIcon icon={faArrowRight} />
+                  &nbsp;김동화&nbsp;
+                  <span
+                    style={{
+                      fontSize: "xx-small",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    백엔드
+                  </span>
                   <Button
                     className="gitButton"
                     children="git"

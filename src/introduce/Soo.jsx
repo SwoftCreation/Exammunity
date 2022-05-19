@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import NavbarComponent from "../component/NavbarComponent";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/introduce.css";

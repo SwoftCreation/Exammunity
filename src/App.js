@@ -10,8 +10,8 @@ import Schedule from "./introduce/Schedule";
 import Project from "./introduce/Project";
 import Home from "./component/Home";
 import ExamMarket from "./component/ExamMarket";
-import ExamSquare from "./examSquare/ExamSquare";
-import Article from "./examSquare/Article";
+import ExamSquare from "./examSquare/ArticleList";
+import writeArticle from "./examSquare/writeArticle.jsx";
 import ShowArticle from "./examSquare/ShowArticle";
 import NavbarComponent from "./component/NavbarComponent";
 /*
@@ -22,7 +22,7 @@ import NavbarComponent from "./component/NavbarComponent";
 function App() {
   return (
     <div>
-      <Route path="/" component={Home} exact="true" />
+      <Route path="/" component={Home} exact />
 
       <Route path="/introduce" component={NavbarComponent} />
       <Route path="/introduce/Schedule" component={Schedule} />
@@ -31,10 +31,13 @@ function App() {
       <Route path="/introduce/Gyu" component={Gyu} />
       <Route path="/introduce/Team" component={Project} />
 
-      <Route path="/ExamMarket" component={ExamMarket} />
-      <Route path="/ExamSquare" component={ExamSquare} exact={true} />
-      <Route path="/ExamSquare/Article" component={Article} />
+      <Route path="/ExamSquare" component={NavbarComponent} />
+
+      <Route path="/ExamSquare/ArticleList" component={ExamSquare} exact />
+      <Route path="/ExamSquare/writeArticle" component={writeArticle} />
       <Route path="/ExamSquare/ShowArticle" component={ShowArticle} />
+
+      <Route path="/ExamMarket" component={ExamMarket} />
     </div>
   );
 }

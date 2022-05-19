@@ -21,7 +21,6 @@ function ShowArticle() {
   console.log("article is ", article);
   return (
     <div>
-      <NavbarComponent />
       <ArticleInfo article={article} />
       <FooterComponent />
     </div>

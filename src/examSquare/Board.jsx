@@ -27,7 +27,8 @@ const Board = () => {
         color="primary"
         style={{ display: "block", margin: "auto" }}
         onClick={() => {
-          history.push("/ExamSquare/Article");
+          console.log("writeArticle component pushed");
+          history.push("/ExamSquare/writeArticle");
         }}
       >
         글 작성
