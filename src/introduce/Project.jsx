@@ -12,12 +12,6 @@ function Project() {
 
   return (
     <div>
-      <NavbarComponent />
-      <br />
-      <br />
-      <hr />
-      <br />
-
       <div className="todoList">
         <h4
           style={{ textAlign: "center", fontSize: "1.8rem" }}

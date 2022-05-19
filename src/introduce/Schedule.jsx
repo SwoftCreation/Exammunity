@@ -18,12 +18,6 @@ function Schedule() {
 
   return (
     <div className="projectPlan">
-      <NavbarComponent />
-      <br />
-      <br />
-      <hr />
-      <br />
-
       <h3 style={{ marginBottom: "15vh" }}>Project Plan</h3>
 
       <div data-aos="fade-up" style={{ marginBottom: "5vh" }}>

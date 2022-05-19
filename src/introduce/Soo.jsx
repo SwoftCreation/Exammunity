@@ -16,11 +16,6 @@ function Soo() {
   });
   return (
     <div className="Soo">
-      <NavbarComponent />
-      <br />
-      <br />
-      <hr />
-      <br />
       <div className="personalIntroduce">
         <h1
           data-aos="fade-up"

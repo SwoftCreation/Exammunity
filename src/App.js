@@ -13,6 +13,7 @@ import ExamMarket from "./component/ExamMarket";
 import ExamSquare from "./examSquare/ExamSquare";
 import Article from "./examSquare/Article";
 import ShowArticle from "./examSquare/ShowArticle";
+import NavbarComponent from "./component/NavbarComponent";
 /*
   App.js
   라우트 리스트 
@@ -23,7 +24,8 @@ function App() {
     <div>
       <Route path="/" component={Home} exact="true" />
 
-      <Route path="/introduce/Schedule" component={Schedule} exact="true" />
+      <Route path="/introduce" component={NavbarComponent} />
+      <Route path="/introduce/Schedule" component={Schedule} />
       <Route path="/introduce/Soo" component={Soo} />
       <Route path="/introduce/Dong" component={Dong} />
       <Route path="/introduce/Gyu" component={Gyu} />

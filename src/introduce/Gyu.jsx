@@ -16,12 +16,6 @@ function Gyu() {
   });
   return (
     <div className="Gyu">
-      <NavbarComponent />
-      <br />
-      <br />
-      <hr />
-      <br />
-
       <div className="personalIntroduce">
         <h1
           data-aos="fade-up"

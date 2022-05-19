@@ -209,6 +209,10 @@ export default function NavbarComponent() {
           </NavbarText>
         </Collapse>
       </Navbar>
+      <br />
+      <br />
+      <hr />
+      <br />
     </div>
   );
 }
