@@ -39,7 +39,7 @@ exports.controlcmText = async function (req, res) {
     return res.send({
       isSuccess: true,
       code: 200,
-      message: "커뮤니티 글 삽입 성공.",
+      message: "유저 삽입 성공.",
     });
   }
 
@@ -49,7 +49,7 @@ exports.controlcmText = async function (req, res) {
     return res.send({
       isSuccess: true,
       code: 200,
-      message: "커뮤니티 글 삭제 성공.",
+      message: "유저 삭제 성공.",
     });
   }
 
@@ -65,7 +65,7 @@ exports.controlcmText = async function (req, res) {
     return res.send({
       isSuccess: true,
       code: 200,
-      message: "커뮤니티 글 수정 성공.",
+      message: "유저 수정 성공.",
     });
   }
 
@@ -84,7 +84,7 @@ exports.controlcmText = async function (req, res) {
     return res.send({
       isSuccess: false,
       code: 404,
-      message: "커뮤니티 글 삽입 실패. invalid control option",
+      message: "유저 삽입 실패. invalid control option",
     });
   }
 };

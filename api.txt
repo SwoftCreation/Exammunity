@@ -1,0 +1,85 @@
+api서술 문서
+
+모든 통신은 json 형식으로 통신함
+
+-유저
+get => "/api/examuser"
+유저들 모든 데이터 가져옴
+
+post => "/api/examuser"
+body 형식
+{
+    control :"",
+    user_num :INT,
+    user_name :"",
+    user_PW :"",
+    user_point :INT,
+    is_deleted :smallINT
+}
+기본적으로 6개의 파라미터를 받는다.
+
+1. create
+{
+    control : "create",
+    user_name : "유저 이름",
+    user_PW : "유저 비밀번호 6자리",
+}
+db에 유저를 추가한다. 
+
+2.delete
+{
+    control : "delete",
+    user_num : INT
+}
+user_num에 해당하는 사용자를 is_deleted를 true로 바꿔 삭제됬음을 표시한다.
+(데이터는 그대로 있음)
+
+3.update
+{
+    control : "update".
+    user_num: INT,
+    user_name : "바꿀 유저 이름(만약 안바꿀꺼면 기존 이름 그대로 써야함)",
+    user_PW :"바꿀 패스워드(만약 안바꿀꺼면 기존 패스워드 그대로 써줘야함)",
+    user_porint : 바꿀 포인트(INT) (만약 안바꿀꺼면 기존 패스워드 그대로 써줘야함),
+}
+유저 정보 변경하는 api.
+
+-커뮤니티
+get => "/api/cmtext"
+DB에 저장되어있는 모든 커뮤니티 글들을 가져온다.
+
+post => "/api/cmtext"
+body 형식
+{
+    control : "",
+    text_num : INT,
+    writer : INT,
+    title : "",
+    write_text : "",
+    is_deleted : smallINT
+}
+기본적으로 6개의 파라미터를 갖고 control에 따라 필요한 파라미터가 달라진다. 아래 참조
+
+1.create
+{
+    control : "create",
+    writer : INT,
+    title : "글의 제목",
+    write_text : "글의 내용",
+}
+db에 글을 추가한다. 이때 text_num, write_date는 저절로 int로 저장됨
+
+2.delete
+{
+    control : "delete",
+    text_num : 글의 고유번호(INT),
+}
+
+3.update
+{
+    control : "update",
+    text_num : 글의 번호(INT),
+    title : "글의 제목(변경 안할꺼면 그대로)",
+    write_text : "글의 본문(변경 안할꺼면 그대로)"
+}
+커뮤니티 글 변경하는 api 
