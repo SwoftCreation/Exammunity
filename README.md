@@ -29,11 +29,11 @@ amazonAWS
 3. npm start 이용하여 서버 실행하기.
 4. localhost:3000 주소로 접속.
 
--WorkBook JSON 형식
+-WorkBook 생성 JSON 형식 예시
 {
 "control" : "create",
-"writer":"", // 로그인 userID
-"title":"",
-"path":"C:/Users/example.hwp", // 절대 경로
-"price":""
+"writer" : "", // 로그인 user_num
+"title" : "",
+"path" : "C:/Users/example.hwp", // 파일 확장자 포함 절대 경로
+"price" : ""
 }
