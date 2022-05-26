@@ -28,3 +28,12 @@ amazonAWS
 2. /src/backEnd/server 폴더로 이동하기.
 3. npm start 이용하여 서버 실행하기.
 4. localhost:3000 주소로 접속.
+
+-WorkBook JSON 형식
+{
+"control" : "create",
+"writer":"", // 로그인 userID
+"title":"",
+"path":"C:/Users/example.hwp", // 절대 경로
+"price":""
+}
