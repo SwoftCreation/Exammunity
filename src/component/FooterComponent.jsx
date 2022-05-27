@@ -4,6 +4,8 @@ import "../style/footerStyle.css";
 /*
   TODO:
   일반적인 푸터로 만들 것
+  하단 고정
+  
 */
 function FooterComponent() {
   return (

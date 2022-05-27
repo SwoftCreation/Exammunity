@@ -31,6 +31,7 @@ const initialState = {
       userPW: "0000",
       userPoint: "0",
       createDate: "20220516",
+      //date 안줘도 됌
       isDeleted: false,
     },
   ],

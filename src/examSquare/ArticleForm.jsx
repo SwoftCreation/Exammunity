@@ -46,6 +46,17 @@ export default function ArticleForm() {
       author: "user",
     };
     dispatch(createArticle(_inputData));
+
+    fetch("/api/cmtext", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        control: "create",
+        writer: 3,
+        title: _inputData.title,
+        write_text: _inputData.content,
+      }),
+    });
     setTitle("");
     setContent("");
     id++;

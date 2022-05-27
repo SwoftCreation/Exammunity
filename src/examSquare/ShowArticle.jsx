@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import NavbarComponent from "../component/NavbarComponent";
 import FooterComponent from "../component/FooterComponent";
 import {
   CardTitle,
