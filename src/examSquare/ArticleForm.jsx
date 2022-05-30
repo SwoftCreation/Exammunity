@@ -52,7 +52,7 @@ export default function ArticleForm() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         control: "create",
-        writer: 3,
+        writer: _inputData.author,
         title: _inputData.title,
         write_text: _inputData.content,
       }),
