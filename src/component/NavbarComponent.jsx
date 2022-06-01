@@ -45,7 +45,14 @@ export default function NavbarComponent() {
         light
         style={{ backgroundColor: "#E6FAFF" }}
       >
-        <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
+        <NavbarBrand
+          href="/"
+          style={{ fontFamily: "fantasy" }}
+          onClick={(e) => {
+            history.push("/");
+            e.defaultPrevented();
+          }}
+        >
           Exammunity
         </NavbarBrand>
         <NavbarToggler
