@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/FrontArticleStyle.css";
 import Swal from "sweetalert2";
+import { useHistory } from "react-router-dom";
 import {
   Card,
   CardBody,
@@ -13,6 +14,7 @@ import {
 } from "reactstrap";
 
 export default function FrontArticleComponent() {
+  const history = useHistory();
   const buttonClicked = (title, text, icon) => {
     Swal.fire({
       title: title,
@@ -56,6 +58,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
+                history.push("/Home/File");
               }}
               style={{ margin: "5px" }}
             >
@@ -84,6 +87,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
+                history.push("Home/File");
               }}
               style={{ margin: "5px" }}
             >
@@ -112,6 +116,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
+                history.push("Home/File");
               }}
               style={{ margin: "5px" }}
             >

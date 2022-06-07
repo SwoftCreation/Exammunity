@@ -49,12 +49,13 @@ export default function NavbarComponent() {
           href="/"
           style={{ fontFamily: "fantasy" }}
           onClick={(e) => {
-            history.push("/");
             e.defaultPrevented();
+            history.push("/");
           }}
         >
           Exammunity
         </NavbarBrand>
+
         <NavbarToggler
           className="me-2"
           onClick={() => {

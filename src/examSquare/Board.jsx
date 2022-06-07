@@ -26,7 +26,7 @@ const Board = () => {
         글 작성
       </Button>
     </div>
-  ); 
+  );
 };
 
 export default Board;

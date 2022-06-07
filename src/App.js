@@ -14,6 +14,9 @@ import ExamSquare from "./examSquare/ArticleList";
 import writeArticle from "./examSquare/writeArticle.jsx";
 import ShowArticle from "./examSquare/ShowArticle";
 import NavbarComponent from "./component/NavbarComponent";
+
+import HomeDetail from "./HomeFiles/HomeDetail";
+import MarketDetail from "./ExamMarket/MarketDetail";
 /*
   App.js
   라우트 리스트 
@@ -32,12 +35,14 @@ function App() {
       <Route path="/introduce/Team" component={Project} />
 
       <Route path="/ExamSquare" component={NavbarComponent} />
-
       <Route path="/ExamSquare/ArticleList" component={ExamSquare} exact />
       <Route path="/ExamSquare/writeArticle" component={writeArticle} />
       <Route path="/ExamSquare/ShowArticle" component={ShowArticle} />
 
       <Route path="/ExamMarket" component={ExamMarket} />
+      <Route path="/ExamMarket/Detail" component={HomeDetail} />
+
+      <Route path="/Home/File" component={MarketDetail} />
     </div>
   );
 }
