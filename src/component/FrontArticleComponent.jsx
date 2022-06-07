@@ -58,7 +58,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
-                history.push("/Home/File");
+                history.push("/ExamMarket/MarketDetail");
               }}
               style={{ margin: "5px" }}
             >
@@ -87,7 +87,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
-                history.push("Home/File");
+                history.push("/ExamMarket/MarketDetail");
               }}
               style={{ margin: "5px" }}
             >
@@ -116,7 +116,7 @@ export default function FrontArticleComponent() {
               id="FrontArticleButtons"
               onClick={() => {
                 buttonClicked("알림", "서비스 준비중입니다", "info");
-                history.push("Home/File");
+                history.push("/ExamMarket/MarketDetail");
               }}
               style={{ margin: "5px" }}
             >

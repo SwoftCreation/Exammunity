@@ -54,7 +54,7 @@ export default function articleReducer(state = initialState, action) {
     case DELETE:
       return {
         ...state,
-        articles: state.article.filter((article) => {
+        articles: state.articles.filter((article) => {
           return article.id !== action.id;
         }),
       };

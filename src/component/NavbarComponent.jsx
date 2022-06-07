@@ -70,7 +70,7 @@ export default function NavbarComponent() {
               id="navHover"
               style={{ margin: "10px" }}
               onClick={() => {
-                history.push("/ExamMarket");
+                history.push("/ExamMarket/MarketPlace");
               }}
             >
               <NavLink>
