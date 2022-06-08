@@ -14,18 +14,20 @@ export default function MarketHome() {
   const history = useHistory();
   return (
     <div>
-      <CustomBox>
-        <h1 style={{ margin: "auto" }}>ExamMarket</h1>
-        <Button
-          color="info"
-          outline
-          onClick={() => {
-            history.push("/ExamMarket/MarketForm");
-          }}
-        >
-          문제 생성하기
-        </Button>
-      </CustomBox>
+      <hr />
+      <h1>MarketPlace</h1>
+
+      <hr />
+
+      <Button
+        color="info"
+        outline
+        onClick={() => {
+          history.push("/ExamMarket/MarketForm");
+        }}
+      >
+        내 exam 등록하기
+      </Button>
     </div>
   );
 }

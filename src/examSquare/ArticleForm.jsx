@@ -15,6 +15,7 @@ export default function ArticleForm() {
     AOS.init({});
   });
   const history = useHistory();
+
   const okayBtnClicked = () => {
     Swal.fire({
       title: "게시글을 등록합니다",

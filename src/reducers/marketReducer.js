@@ -1,5 +1,3 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
-
 const CREATE = "market/CREATE";
 const DELETE = "market/DELETE";
 
@@ -7,6 +5,10 @@ const DELETE = "market/DELETE";
 Market 게시물 
  
 */
+const initialState = {
+  marketNum: 0,
+  markets: [],
+};
 
 export default function marketReducer(state = initialState, action) {
   switch (action.type) {
@@ -49,9 +51,4 @@ export const deleteMarket = (id) => {
     type: DELETE,
     id,
   };
-};
-
-const initialState = {
-  marketNum: 0,
-  markets: [],
 };
