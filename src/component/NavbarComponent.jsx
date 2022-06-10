@@ -49,8 +49,8 @@ export default function NavbarComponent() {
           href="/"
           style={{ fontFamily: "fantasy" }}
           onClick={(e) => {
-            e.defaultPrevented();
             history.push("/");
+            e.preventDefault();
           }}
         >
           Exammunity

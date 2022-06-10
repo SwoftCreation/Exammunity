@@ -80,7 +80,6 @@ export default function MarketForm() {
             value={coin}
           />
           <InputGroupText>$</InputGroupText>
-          <InputGroupText>$exmCoin</InputGroupText>
         </InputGroup>
         <textarea
           class="form-control"
