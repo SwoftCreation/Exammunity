@@ -45,7 +45,6 @@ function App() {
       <Route path="/ExamMarket/MarketPlace" component={MarketHome} />
       <Route path="/ExamMarket/Detail" component={HomeDetail} />
       <Route path="/ExamMarket/MarketForm" component={MarketForm} />
-
       <Route path="/ExamMarket/MarketDetail" component={MarketDetail} />
     </div>
   );

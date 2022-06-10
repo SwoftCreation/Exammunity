@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "reactstrap";
+import { Button, InputGroup, InputGroupText, Input } from "reactstrap";
 import { useDispatch } from "react-redux";
 import { createMarket } from "../reducers/marketReducer";
 import { useHistory } from "react-router-dom";
 import FooterComponent from "../component/FooterComponent";
 import AOS from "aos";
+import styled from "styled-components";
+
+const CustomP = styled.p`
+  @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+  font-size: 2rem;
+  font-family: "Black Han Sans", sans-serif;
+`;
 
 export default function MarketForm() {
   useEffect(() => {
@@ -14,7 +21,7 @@ export default function MarketForm() {
   const history = useHistory();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-
+  const [coin, setCoin] = useState();
   const dispatch = useDispatch();
 
   const onSave = () => {
@@ -22,6 +29,7 @@ export default function MarketForm() {
       title: title,
       content: content,
       author: "user",
+      coin: coin,
     };
     dispatch(createMarket(_inputData));
 
@@ -44,12 +52,15 @@ export default function MarketForm() {
     setContent(e.target.value);
   };
 
+  const handleCoin = (e) => {
+    setCoin(e.target.value);
+  };
+
   return (
     <div>
-      <h1>MarketForm</h1>
-      <div class="form-group" style={{ margin: "5%" }}>
+      <div class="form-group" style={{ margin: "3%" }}>
         <label for="exampleFormControlTextarea1" style={{ fontSize: "1.4rem" }}>
-          문제등록
+          <CustomP>Publish Exam</CustomP>
         </label>
 
         <input
@@ -58,8 +69,19 @@ export default function MarketForm() {
           //value랑 onChange는 어떻게 보면 하나라고 봐야한다.
           value={title}
           onChange={handleTitle}
+          placeholder="Exam 제목"
         ></input>
-
+        <InputGroup>
+          <InputGroupText>판매가격 - $exmCoin</InputGroupText>
+          <InputGroupText>$</InputGroupText>
+          <Input
+            placeholder="Exammunity Coin "
+            onChange={handleCoin}
+            value={coin}
+          />
+          <InputGroupText>$</InputGroupText>
+          <InputGroupText>$exmCoin</InputGroupText>
+        </InputGroup>
         <textarea
           class="form-control"
           id="exampleFormControlTextarea1"
@@ -71,10 +93,19 @@ export default function MarketForm() {
 
         <Button
           color="primary"
-          style={{ marginLeft: "10%", marginRight: "5%" }}
+          style={{ marginTop: "10px" }}
           onClick={okayBtnClicked}
         >
           등록하기
+        </Button>
+        <Button
+          color="danger"
+          style={{ marginLeft: "1%", marginTop: "10px" }}
+          onClick={() => {
+            history.goBack();
+          }}
+        >
+          취소하기
         </Button>
       </div>
       <FooterComponent />

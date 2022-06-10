@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
+import React from 'react';
+
 
 const HomeDetail = () => {
   return (
