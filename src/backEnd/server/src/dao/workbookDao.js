@@ -136,3 +136,28 @@ exports.deleteWorkbook = async function (workbook_num) {
     return false;
   }
 };
+
+exports.uploadfile = async function (
+  path // 'C:/Users/denos/Sample.hwp'
+) {
+  // s3 연결
+  const s3 = new AWS.S3({
+    accessKeyId: "AKIASWSRW47DCFQFCORY", // 사용자 AccessKey
+    secretAccessKey: "Cvq2eqar8+k865uiKadf1EGIO8fc0FSrxfFVy83Z", // 사용자 secretAccessKey
+  });
+  const bucket_name = "wbposition";
+  const fileContent = fs.readFileSync(path);
+  const params = {
+    Bucket: bucket_name,
+    Key: path,
+    Body: fileContent,
+  };
+  let s3Path;
+  s3.upload(params, (err, data) => {
+    if (err) {
+      res.send(err);
+    } else {
+      s3Path = data.Location;
+    }
+  });
+};

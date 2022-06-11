@@ -20,13 +20,16 @@ export default function MarketForm() {
 
   const history = useHistory();
   const [title, setTitle] = useState("");
+  const [workbook, setWorkbook] = useState("");
   const [content, setContent] = useState("");
   const [coin, setCoin] = useState();
   const dispatch = useDispatch();
-
+  let file;
+  let formData = new FormData();
   const onSave = () => {
     const _inputData = {
       title: title,
+      workbook: workbook,
       content: content,
       author: "user",
       coin: coin,
@@ -41,11 +44,30 @@ export default function MarketForm() {
 
   const okayBtnClicked = () => {
     console.log("okay clicked");
+    formData.append("files", file);
+    console.log(formData.get("files"));
+    fetch("/post", { method: "post", body: formData })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log("success", result);
+      })
+      .catch((error) => {
+        console.error("fault");
+      });
     onSave();
   };
 
+  function onFile(event) {
+    event.preventDefault();
+    file = event.target.files[0];
+  }
+
   const handleTitle = (e) => {
     setTitle(e.target.value);
+  };
+
+  const handleWorkbook = (e) => {
+    setWorkbook(e.target.value);
   };
 
   const handleContent = (e) => {
@@ -70,6 +92,13 @@ export default function MarketForm() {
           value={title}
           onChange={handleTitle}
           placeholder="Exam 제목"
+        ></input>
+        <input
+          class="form-control"
+          type="file"
+          onChange={(e) => {
+            onFile(e);
+          }}
         ></input>
         <InputGroup>
           <InputGroupText>판매가격 - $exmCoin</InputGroupText>

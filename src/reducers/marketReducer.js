@@ -71,11 +71,12 @@ export default function marketReducer(state = initialState, action) {
   }
 }
 
-export const createMarket = ({ title, content, author, coin }) => {
+export const createMarket = ({ title, workbook, content, author, coin }) => {
   return {
     type: CREATE,
     market: {
       title,
+      workbook,
       content,
       author,
       coin,

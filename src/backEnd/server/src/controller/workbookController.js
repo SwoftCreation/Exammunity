@@ -69,6 +69,15 @@ exports.controlWorkbook = async function (req, res) {
       code: 200,
       message: "테스트 성공.",
     });
+  } else if (control === "workbook") {
+    const insertWorkbook = await workbookDao.insertWorkbook(path);
+
+    return res.send({
+      result: insertWorkbook,
+      isSuccess: true,
+      code: 200,
+      message: "문제 삽입 성공.",
+    });
   }
 
   //except
