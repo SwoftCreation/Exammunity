@@ -44,6 +44,7 @@ export default function MarketForm() {
 
   const okayBtnClicked = () => {
     console.log("okay clicked");
+    //파일 전송
     formData.append("files", file);
     console.log(formData.get("files"));
     fetch("/post", { method: "post", body: formData })
@@ -54,6 +55,7 @@ export default function MarketForm() {
       .catch((error) => {
         console.error("fault");
       });
+    //끝
     onSave();
   };
 

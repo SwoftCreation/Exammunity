@@ -16,13 +16,13 @@ const port = 3000;
 const http = require("http").createServer(app);
 
 //test
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const multer = require("multer");
-const form_data = multer();
+// const form_data = multer();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(form_data.array());
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(form_data.array());
 //
 
 /* express 미들웨어 설정 */
