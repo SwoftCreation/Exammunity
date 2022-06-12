@@ -19,6 +19,8 @@ import MarketHome from "./ExamMarket/MarketHome";
 import HomeDetail from "./HomeFiles/HomeDetail";
 import MarketDetail from "./ExamMarket/MarketDetail";
 import MarketForm from "./ExamMarket/MarketForm";
+import MyExam from "./component/MyExam";
+import MyExamDetail from "./component/MyExamDetail";
 /*
   App.js
   라우트 리스트 
@@ -46,6 +48,8 @@ function App() {
       <Route path="/ExamMarket/Detail" component={HomeDetail} />
       <Route path="/ExamMarket/MarketForm" component={MarketForm} />
       <Route path="/ExamMarket/MarketDetail" component={MarketDetail} />
+      <Route path="/ExamMarket/MyExam" component={MyExam} exact />
+      <Route path="/ExamMarket/MyExam/MyExamDetail" component={MyExamDetail} />
     </div>
   );
 }

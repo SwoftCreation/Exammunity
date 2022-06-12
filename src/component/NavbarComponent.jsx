@@ -83,6 +83,17 @@ export default function NavbarComponent() {
                 ExamMarket <FontAwesomeIcon icon={faCartPlus} />
               </NavLink>
             </NavItem>
+            <NavItem
+              id="navHover"
+              style={{ margin: "10px" }}
+              onClick={() => {
+                history.push("/ExamMarket/MyExam");
+              }}
+            >
+              <NavLink>
+                MyExam <FontAwesomeIcon />
+              </NavLink>
+            </NavItem>
 
             <NavItem
               id="navHover"
