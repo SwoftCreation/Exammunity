@@ -25,6 +25,10 @@ const Board = () => {
       >
         글 작성
       </Button>
+      <br />
+      <br />
+      <hr />
+      <br />
     </div>
   );
 };

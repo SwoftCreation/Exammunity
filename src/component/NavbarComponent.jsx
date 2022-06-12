@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/NavStyle.css";
-import { loginBtnClicked } from "../login/loginButton";
+import { LoginButton } from "../login/LoginButton";
 
 import {
   faArrowRightToBracket,
@@ -29,6 +29,7 @@ import {
 } from "reactstrap";
 
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 /*
   NavbarComponent : 상단 네비게이션 바
@@ -37,6 +38,11 @@ import { useHistory } from "react-router-dom";
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
+
+  const userInfo = useSelector((state) => {
+    return state.userReducer.userInfo;
+  });
+
   return (
     <div>
       <Navbar
@@ -217,13 +223,26 @@ export default function NavbarComponent() {
             size="sm"
             style={{ margin: "10px 10px 10px 10px" }}
             id="loginButton"
-            onClick={loginBtnClicked}
+            onClick={() => {
+              console.log("pushed Login Button");
+              LoginButton();
+            }}
           >
             로그인 &nbsp;
             <FontAwesomeIcon icon={faArrowRightToBracket} />
           </Button>
+          <NavbarText>
+            {userInfo ? (
+              <p>
+                {userInfo[0].userName} - {userInfo[0].userPoint} Point
+              </p>
+            ) : (
+              <p>로그인이 필요합니다</p>
+            )}
+          </NavbarText>
+
           <NavbarText
-            style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
+            style={{ fontSize: "xx-small", margin: "20px 10px 10px 30px" }}
           >
             2022 Software Project
           </NavbarText>
