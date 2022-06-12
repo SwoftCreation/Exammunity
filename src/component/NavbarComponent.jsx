@@ -228,7 +228,7 @@ export default function NavbarComponent() {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <Button
+          {/* <Button
             color="success"
             outline="true"
             size="sm"
@@ -241,7 +241,7 @@ export default function NavbarComponent() {
           >
             로그인 &nbsp;
             <FontAwesomeIcon icon={faArrowRightToBracket} />
-          </Button>
+          </Button> */}
           <NavbarText>
             {userInfo ? (
               <p>

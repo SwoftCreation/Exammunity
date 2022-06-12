@@ -19,6 +19,13 @@ export default function MyExamDetail() {
       <h3>시험지 - 현읍읍 모의고사</h3>
 
       <br />
+      <iframe
+        src="https://onedrive.live.com/embed?cid=A581D305D3D85C3C&resid=A581D305D3D85C3C%21242&authkey=ACNzMyxh9jmC2Ow&em=2"
+        width="476"
+        height="288"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
       <br />
       <br />
       <br />
